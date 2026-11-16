@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/sunstonesoft/design-style-picker/blob/main/data/picker.schema.json",
+  "title": "Design Style Picker data",
+  "description": "Styles, industries, questions and scoring weights. scripts/check.mjs enforces the cross-references this schema can't (style ids, era files, scenarios).",
+  "type": "object",
+  "required": ["model", "styles", "industries", "questions", "scoring"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "$comment": { "type": "string" },
+    "model": { "type": "integer", "minimum": 1, "description": "Bump when scoring or ratings change in a way that changes picks; shared links carry it." },
+    "scales": { "type": "object", "additionalProperties": { "type": "string" } },
+    "styles": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "year", "name", "file", "tagline", "traits"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "kind": { "enum": ["style", "layout", "theme"] },
+          "demo": { "type": "boolean" },
+          "year": { "type": "integer", "minimum": 1990, "maximum": 2100 },
+          "name": { "type": "string" },
+          "file": { "type": "string", "pattern": "^eras/\\d{4}-[a-z0-9-]+\\.md$" },
+          "tagline": { "type": "string", "maxLength": 80 },
+          "traits": {
+            "type": "object",
+            "required": ["energy", "tone", "edge", "freshness", "density", "a11yRisk", "mode", "pages"],
+            "additionalProperties": false,
+            "properties": {
+              "energy": { "$ref": "#/$defs/five" },
+              "tone": { "$ref": "#/$defs/five" },
+              "edge": { "$ref": "#/$defs/five" },
+              "freshness": { "$ref": "#/$defs/five" },
+              "density": { "$ref": "#/$defs/three" },
+              "a11yRisk": { "$ref": "#/$defs/three" },
+              "mode": { "enum": ["light", "dark", "both"] },
+              "pages": {
+                "type": "object", "required": ["marketing", "app", "content", "store"], "additionalProperties": false,
+                "properties": {
+                  "marketing": { "$ref": "#/$defs/pageFit" }, "app": { "$ref": "#/$defs/pageFit" },
+                  "content": { "$ref": "#/$defs/pageFit" }, "store": { "$ref": "#/$defs/pageFit" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "industries": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "defaults", "strong", "works", "avoid"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string" },
+          "defaults": {
+            "type": "object", "required": ["energy", "tone", "edge", "page"], "additionalProperties": false,
+            "properties": {
+              "energy": { "$ref": "#/$defs/five" }, "tone": { "$ref": "#/$defs/five" }, "edge": { "$ref": "#/$defs/five" },
+              "page": { "enum": ["marketing", "app", "content", "store"] }
+            }
+          },
+          "strong": { "$ref": "#/$defs/reasons" },
+          "works": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "avoid": { "$ref": "#/$defs/reasons" }
+        }
+      }
+    },
+    "questions": { "type": "array" },
+    "scoring": {
+      "type": "object",
+      "required": ["industry", "page", "perPointEnergy", "perPointTone", "perPointEdge", "modeMismatch", "trendPerPoint", "densityShortfallPerPoint", "riskPerPoint", "simpleEffectsRiskPerPoint"],
+      "properties": {
+        "industry": {
+          "type": "object", "required": ["strong", "works", "neutral", "avoid"],
+          "additionalProperties": { "type": "number" }
+        },
+        "page": { "type": "object", "required": ["0", "1", "2"], "additionalProperties": { "type": "number" } }
+      },
+      "additionalProperties": { "type": "number" }
+    }
+  },
+  "$defs": {
+    "five": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "three": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "pageFit": { "enum": [0, 1, 2] },
+    "reasons": {
+      "type": "object",
+      "description": "style id → one-line reason a non-designer understands",
+      "additionalProperties": { "type": "string", "minLength": 8, "maxLength": 120 }
+    }
+  }
+}

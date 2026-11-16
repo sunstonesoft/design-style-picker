@@ -28,6 +28,8 @@ Demos are also checked with axe-core in CI (`a11y` workflow). To run it locally:
 - **styles**: `kind` (`style` competes for the pick; `layout`/`theme` are add-ons), traits on fixed scales (see `scales` in the file), and page-type suitability.
 - **industries**: `defaults` (typical page type, feel, tone and edge), plus `strong` and `avoid` maps with a one-line reason each, and a `works` list.
 - **scoring**: the weights. Change them only with a scenario showing why.
+- **model**: bump it when a change to ratings or weights changes picks. Shared links carry it, and old links show a note that results were updated.
+- Editors that understand JSON Schema validate the file as you type (`data/picker.schema.json`).
 
 Rules for changes:
 

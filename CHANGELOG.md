@@ -6,6 +6,8 @@
 - **Shared demo brief**: Kettlefern Coffee Roasters, a fictional roaster every demo builds with the same sections and copy. All ten styles now have a demo (five deep, five basic).
 - **Gallery** at `/gallery/`: one business in ten styles, with a side-by-side compare view.
 - **Feedback button**: "Not really" under a pick opens a pre-filled industry-fit issue.
+- **Picker**: "Why not…?" explains any style outside the top three; shared links carry a model version and say when results were updated since.
+- **Data**: JSON Schema for `data/picker.json` (editor validation).
 - **CI**: weekly link checker (dead sources open an issue); axe-core accessibility run on every demo in light and dark (`scripts/a11y.mjs`).
 - **Fixes**: Linear-style tertiary grey raised to pass AA (the widely copied `#62666d` is 3.45:1); bento switcher selector collision and accent contrast; Liquid Glass accent contrast; the dead Gumroad source now points to an archived copy.
 

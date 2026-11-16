@@ -1,5 +1,7 @@
 // Generated from data/picker.json by scripts/build.mjs. Do not edit by hand.
 export default {
+  "$schema": "./picker.schema.json",
+  "model": 2,
   "$comment": "Single source of truth for the picker. Edit this file, then run `npm run build` to regenerate skills/design-style-picker/picker.md (generated section) and docs/picker-data.js. Scenario regressions live in data/scenarios.json.",
   "scales": {
     "kind": "style = a whole visual direction (the main pick) · layout = an arrangement you can combine with a style · theme = a colour scheme you can combine with a style",

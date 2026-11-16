@@ -116,6 +116,11 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 .avoid ul { margin: 0; padding-left: 18px; color: var(--muted); }
 .share { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
 .share .fb { display: inline-flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-left: auto; }
+.whynot { display: grid; gap: 10px; font-size: 15px; }
+.whynot label { font-weight: 600; }
+.whynot select { max-width: 360px; }
+.whynot p { margin: 0; }
+.stale { margin: 0; font-size: 14px; color: var(--muted); border-left: 4px solid var(--accent); }
 @media (max-width: 640px) { .share .fb { margin-left: 0; } }
 .toast { position: fixed; left: 50%; bottom: 24px; translate: -50% 0; background: var(--ink); color: var(--bg);
          padding: 10px 18px; border-radius: 999px; font-weight: 600; opacity: 0; transition: opacity .2s; pointer-events: none; }
@@ -355,11 +360,26 @@ function render() {
     `<div class="runners">${rest.slice(0, 2).map((r, i) => card(r, i + 1)).join("")}</div>` +
     (avoid.length ? `<div class="panel avoid"><h3>Avoid for ${esc(ind.name.toLowerCase())}</h3><ul>${avoid.map(([id, why]) =>
       `<li><b>${esc(data.styles.find((x) => x.id === id).name)}</b>: ${esc(why)}</li>`).join("")}</ul></div>` : "") +
+    `<div class="panel whynot"><label for="whynot">Why not…?</label>
+      <select id="whynot"><option value="">Pick a style that wasn't recommended</option>${styles.slice(3).map((r) =>
+        `<option value="${r.id}">${esc(r.style.name)} (${r.style.year})</option>`).join("")}</select>
+      <div id="whynot-out" aria-live="polite"></div></div>` +
     `<div class="share">Share this result: <button class="btn" type="button" id="copy-link">Copy link</button>
       <span class="fb" id="fb">Was this the right pick? <button class="btn" type="button" id="fb-yes">Yes</button>
       <a class="btn" id="fb-no" target="_blank" rel="noopener">Not really →</a></span></div>`;
-  const p = new URLSearchParams(Object.entries(s).map(([k, v]) => [k, String(v)]));
+  const p = new URLSearchParams([...Object.entries(s).map(([k, v]) => [k, String(v)]), ["v", String(data.model)]]);
   history.replaceState(null, "", "#" + p);
+  // "Why not X?": rank, fit and the scorer's own notes for any style outside the top 3
+  $("#whynot").onchange = (e) => {
+    const r = styles.find((x) => x.id === e.target.value);
+    const o = $("#whynot-out");
+    if (!r) { o.innerHTML = ""; return; }
+    const rank = styles.indexOf(r) + 1;
+    const fitTxt = { strong: "a strong fit", works: "a workable fit", neutral: "neutral", avoid: "rated avoid" }[r.fit];
+    o.innerHTML = `<p><b>${esc(r.style.name)}</b> ranks #${rank} of ${styles.length} for this brief. For ${esc(ind.name.toLowerCase())} it's ${fitTxt}.</p>
+      <ul class="notes">${r.notes.map((x) => `<li class="${x.kind}">${esc(x.text)}</li>`).join("") || `<li class="minus">Its feel, tone or daring sit further from what you asked for.</li>`}</ul>
+      <a class="btn" href="${guideUrl(r.style)}">Build guide anyway →</a>`;
+  };
   // "Not really" opens the industry-fit issue form, pre-filled. No backend, no tracking.
   const issue = new URLSearchParams({
     template: "industry-fit.yml",
@@ -392,11 +412,15 @@ $("#gallery").innerHTML = data.styles.map((s) => `
   <a class="panel tile" href="${guideUrl(s)}">${preview(s.id)}<b>${esc(s.name)}</b><small>${s.year} · ${esc(s.tagline)}</small></a>`).join("");
 
 const initial = fromHash();
+const linkModel = +new URLSearchParams(location.hash.slice(1)).get("v") || 1;
 if (initial) {
   const ind = data.industries.find((i) => i.id === initial.industry);
   writeForm({ ...readForm(), ...ind.defaults, ...initial });   // link params win, industry defaults fill the gaps
 }
 render();
+if (initial && linkModel !== data.model) {
+  $("#results").insertAdjacentHTML("afterbegin", `<p class="panel stale" role="status">The picker's recommendations have been updated since this link was shared, so this result may differ from the one that was sent to you.</p>`);
+}
 </script>
 </body>
 </html>
