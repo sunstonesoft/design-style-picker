@@ -58,6 +58,9 @@ for (const file of files) {
   const needed = depth === "deep" ? [...REQUIRED_SECTIONS, ...DEEP_EXTRA_SECTIONS] : REQUIRED_SECTIONS;
   for (const s of needed) if (!headings.includes(s)) errors.push(`${where}: missing section "## ${s}"`);
 
+  if (depth === "deep" && !existsSync(join(skillDir, "examples", `${meta.year}-${meta.slug}`, "index.html")))
+    errors.push(`${where}: deep eras must ship a demo at examples/${meta.year}-${meta.slug}/index.html (see examples/README.md)`);
+
   const sources = text.split(/^## Sources$/m)[1] ?? "";
   const links = sources.match(/\]\(https?:\/\/[^)]+\)/g) ?? [];
   if (links.length < MIN_SOURCES[depth])
