@@ -4,7 +4,7 @@
 
 **Find the website design style that fits your business, then let your AI agent build it right.**
 
-10 proven web design styles · 28 industries · sourced rules, design tokens and checklists for Claude Code, Cursor, Codex and any coding agent.
+10 proven web design styles · 36 industries · sourced rules, design tokens and checklists for Claude Code, Cursor, Codex and any coding agent.
 
 [**Try the picker →**](https://sunstonesoft.github.io/design-style-picker/) &nbsp;·&nbsp; [One business, ten styles](https://sunstonesoft.github.io/design-style-picker/gallery/) &nbsp;·&nbsp; [Install](#install) &nbsp;·&nbsp; [The styles](#the-styles) &nbsp;·&nbsp; [How it picks](#how-it-picks) &nbsp;·&nbsp; [Contribute](#contributing)
 
@@ -83,7 +83,7 @@ See the **[gallery](https://sunstonesoft.github.io/design-style-picker/gallery/)
 
 The logic is fully transparent: one data file, one small scoring function, written out for agents in [`picker.md`](skills/design-style-picker/picker.md).
 
-- **Industry fit.** 28 industries rate each style *strong*, *works* or *avoid*, with a one-line reason ([`data/picker.json`](data/picker.json)).
+- **Industry fit.** 36 industries rate each style *strong*, *works* or *avoid*, with a one-line reason ([`data/picker.json`](data/picker.json)).
 - **Page fit.** Marketing site, web app, content site or store. Glass is great for a landing page and poor for a data table.
 - **Your taste.** Calm ↔ bold, serious ↔ playful, safe ↔ edgy, light/dark, current or retro.
 - **Effect tolerance.** High-risk effects (transparency, blur) cost more when your users are on older devices. Accessibility fixes are applied either way.

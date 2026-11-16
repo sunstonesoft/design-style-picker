@@ -83,7 +83,7 @@ If the top score is still negative, if no base style is rated strong for the ind
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | B2B SaaS | ✓ | ✕ | · | ✓ | ✕ | ✓ | · | ★ | ★ | ✓ |
 | Developer tools & AI products | · | ✓ | ✕ | ★ | ✕ | ✓ | · | ★ | ✓ | ✓ |
-| Fintech, banking & payments | ✓ | ✕ | ✓ | ✓ | ✕ | ✓ | · | ★ | ★ | ✓ |
+| Fintech, consumer banking & payments | ✓ | ✕ | ✓ | ✓ | ✕ | ✓ | · | ★ | ★ | ✓ |
 | E-commerce & retail | ★ | · | ✓ | ✓ | ✕ | ✕ | ✓ | · | ★ | ✓ |
 | Restaurants, cafés & food brands | · | ✓ | ✓ | ✓ | ✕ | · | ★ | ✕ | ★ | ✓ |
 | Healthcare & medical | ★ | ✕ | ✓ | ✓ | ✕ | ✕ | · | · | ★ | ✕ |
@@ -93,7 +93,7 @@ If the top score is still negative, if no base style is rated strong for the ind
 | Creators, coaches & personal brands | ✕ | ✓ | ✓ | · | · | ✓ | ★ | · | ★ | ✓ |
 | Education & e-learning | ★ | · | ✓ | ✓ | ✕ | ✕ | ✓ | · | ✓ | ✕ |
 | Nonprofits & community organisations | ✓ | ✓ | ✓ | · | ✕ | ✕ | ★ | ✓ | ★ | · |
-| Gaming, esports & entertainment | ✕ | ✓ | · | ★ | ✕ | ★ | ✓ | ✓ | ✓ | ✓ |
+| Esports & competitive games | ✕ | ✓ | · | ★ | ✕ | ★ | ✓ | ✓ | ✓ | ✓ |
 | Music, film & media | ✕ | ✓ | · | ✓ | ✕ | ★ | ✓ | · | ✓ | ★ |
 | Luxury, fashion & beauty | ✕ | ✓ | ✕ | ✓ | · | ✓ | ✕ | ✓ | · | ✓ |
 | Local trades & home services | ★ | ✕ | ✓ | ✓ | ✕ | ✕ | ✓ | · | ★ | ✕ |
@@ -109,6 +109,14 @@ If the top score is still negative, if no base style is rated strong for the ind
 | Government & public services | ★ | ✕ | · | ✓ | ✕ | ✕ | ✕ | · | ✓ | ✕ |
 | Research, science & universities | ★ | ✓ | · | ✓ | ✕ | ✕ | · | ✓ | ✓ | · |
 | Logistics, transport & delivery | ★ | · | · | ✓ | ✕ | ✕ | ✕ | ★ | ✓ | · |
+| Cozy & indie games | ✕ | ✓ | ★ | ✓ | · | ✓ | ★ | ✕ | ✓ | · |
+| Trading & investing platforms | ✓ | · | · | ★ | ✕ | ✕ | ✕ | ★ | ✓ | ✕ |
+| Gyms, fitness & sports | · | ✓ | ✓ | ★ | ✕ | ✕ | ★ | ✓ | ✓ | · |
+| Beauty salons, barbers & spas | ✕ | · | ✓ | ✓ | · | ✓ | ✓ | ✕ | ✓ | ★ |
+| Pets, vets & animal care | ✓ | ✕ | ★ | · | · | · | ★ | ✕ | ✓ | · |
+| Photographers & visual artists | · | ★ | ✕ | ✓ | ✕ | ✓ | · | · | ✓ | ★ |
+| Open-source projects & developer docs | ✓ | ✓ | · | ★ | · | ✕ | ✓ | ★ | ✓ | ✕ |
+| Cybersecurity | ✓ | · | ✕ | ★ | ✕ | ✓ | ✕ | ★ | ✓ | · |
 
 ## Style traits
 
@@ -161,7 +169,7 @@ Scales: feel 1 calm → 5 bold · tone 1 serious → 5 playful · edge 1 safe �
 
 *Pick with these defaults:* **Linear Style (dark SaaS)** + Dark Mode + Bento Grid
 
-### Fintech, banking & payments
+### Fintech, consumer banking & payments
 
 *Defaults:* marketing site · feel 2 · tone 2 · edge 1
 
@@ -321,7 +329,7 @@ Scales: feel 1 calm → 5 bold · tone 1 serious → 5 playful · edge 1 safe �
 
 *Pick with these defaults:* **Neubrutalism** + Bento Grid
 
-### Gaming, esports & entertainment
+### Esports & competitive games
 
 *Defaults:* marketing site · feel 4 · tone 4 · edge 3
 
@@ -576,5 +584,135 @@ Scales: feel 1 calm → 5 bold · tone 1 serious → 5 playful · edge 1 safe �
 - [Neubrutalism](eras/2022-neubrutalism.md): Too playful for operations
 
 *Pick with these defaults:* **Material Design** + Dark Mode + Bento Grid
+
+### Cozy & indie games
+
+*Defaults:* marketing site · feel 3 · tone 5 · edge 3
+
+**Best fits**
+- [Neubrutalism](eras/2022-neubrutalism.md): Hand-made, playful energy that suits indie studios
+- [Vibrant Gradients & Flat 2.0](eras/2018-gradients-flat-2.md): Warm, cheerful colour for cosy worlds
+
+**Also works:** [Glassmorphism](eras/2021-glassmorphism.md), [Bento Grid](eras/2024-bento-grid.md), [Dark Mode](eras/2019-dark-mode.md), [Web Brutalism](eras/2017-brutalism.md)
+
+**Avoid**
+- [Linear Style (dark SaaS)](eras/2023-linear-style.md): Reads like enterprise software, not a game
+- [Material Design](eras/2016-material-design.md): Utility-app look flattens the world you built
+
+*Pick with these defaults:* **Neubrutalism** + Bento Grid + Dark Mode
+
+### Trading & investing platforms
+
+*Defaults:* app site · feel 2 · tone 1 · edge 1
+
+**Best fits**
+- [Linear Style (dark SaaS)](eras/2023-linear-style.md): Dense, precise, dark: what active traders expect
+- [Dark Mode](eras/2019-dark-mode.md): Long sessions staring at charts
+
+**Also works:** [Material Design](eras/2016-material-design.md), [Bento Grid](eras/2024-bento-grid.md)
+
+**Avoid**
+- [Glassmorphism](eras/2021-glassmorphism.md): Numbers on glass are hard to read fast
+- [Neubrutalism](eras/2022-neubrutalism.md): Too playful for people moving money
+- [Neumorphism](eras/2020-neumorphism.md): Unclear controls where mistakes cost money
+- [Liquid Glass](eras/2025-liquid-glass.md): Transparency fights dense data
+
+*Pick with these defaults:* **Linear Style (dark SaaS)** + Dark Mode + Bento Grid
+
+### Gyms, fitness & sports
+
+*Defaults:* marketing site · feel 5 · tone 3 · edge 3
+
+**Best fits**
+- [Neubrutalism](eras/2022-neubrutalism.md): Loud, punchy and energetic like a good class
+- [Dark Mode](eras/2019-dark-mode.md): Dark, high-contrast photography sells intensity
+
+**Also works:** [Web Brutalism](eras/2017-brutalism.md), [Vibrant Gradients & Flat 2.0](eras/2018-gradients-flat-2.md), [Bento Grid](eras/2024-bento-grid.md), [Linear Style (dark SaaS)](eras/2023-linear-style.md)
+
+**Avoid**
+- [Neumorphism](eras/2020-neumorphism.md): Too soft and sleepy for training
+- [Glassmorphism](eras/2021-glassmorphism.md): Busy photos plus glass make schedules hard to read
+
+*Pick with these defaults:* **Neubrutalism** + Bento Grid + Dark Mode
+
+### Beauty salons, barbers & spas
+
+*Defaults:* marketing site · feel 2 · tone 3 · edge 2
+
+**Best fits**
+- [Liquid Glass](eras/2025-liquid-glass.md): Polished floating booking controls over portfolio photos
+
+**Also works:** [Glassmorphism](eras/2021-glassmorphism.md), [Bento Grid](eras/2024-bento-grid.md), [Vibrant Gradients & Flat 2.0](eras/2018-gradients-flat-2.md), [Neubrutalism](eras/2022-neubrutalism.md), [Dark Mode](eras/2019-dark-mode.md)
+
+**Avoid**
+- [Material Design](eras/2016-material-design.md): Feels like a booking app, not a place to treat yourself
+- [Linear Style (dark SaaS)](eras/2023-linear-style.md): Tech-cold for a personal service
+
+*Pick with these defaults:* **Liquid Glass** + Bento Grid + Dark Mode
+
+### Pets, vets & animal care
+
+*Defaults:* marketing site · feel 4 · tone 4 · edge 2
+
+**Best fits**
+- [Neubrutalism](eras/2022-neubrutalism.md): Friendly, bright and full of character
+- [Vibrant Gradients & Flat 2.0](eras/2018-gradients-flat-2.md): Warm and cheerful, pairs with illustration
+
+**Also works:** [Material Design](eras/2016-material-design.md), [Bento Grid](eras/2024-bento-grid.md)
+
+**Avoid**
+- [Linear Style (dark SaaS)](eras/2023-linear-style.md): Dark tech look feels cold for pet owners
+- [Web Brutalism](eras/2017-brutalism.md): Harsh where owners want reassurance
+
+*Pick with these defaults:* **Vibrant Gradients & Flat 2.0** + Bento Grid
+
+### Photographers & visual artists
+
+*Defaults:* marketing site · feel 3 · tone 2 · edge 4
+
+**Best fits**
+- [Web Brutalism](eras/2017-brutalism.md): Gets out of the way of the work, with confident type
+- [Liquid Glass](eras/2025-liquid-glass.md): Floating controls over full-bleed photography
+
+**Also works:** [Dark Mode](eras/2019-dark-mode.md), [Bento Grid](eras/2024-bento-grid.md), [Glassmorphism](eras/2021-glassmorphism.md)
+
+**Avoid**
+- [Neumorphism](eras/2020-neumorphism.md): Grey surfaces mute the images
+- [Vibrant Gradients & Flat 2.0](eras/2018-gradients-flat-2.md): Loud colour competes with the photos
+
+*Pick with these defaults:* **Liquid Glass** + Bento Grid + Dark Mode
+
+### Open-source projects & developer docs
+
+*Defaults:* content site · feel 2 · tone 2 · edge 2
+
+**Best fits**
+- [Linear Style (dark SaaS)](eras/2023-linear-style.md): The look developers trust for tools they adopt
+- [Dark Mode](eras/2019-dark-mode.md): Docs read in dark editors and terminals
+
+**Also works:** [Material Design](eras/2016-material-design.md), [Web Brutalism](eras/2017-brutalism.md), [Neubrutalism](eras/2022-neubrutalism.md), [Bento Grid](eras/2024-bento-grid.md)
+
+**Avoid**
+- [Glassmorphism](eras/2021-glassmorphism.md): Code and docs on glass are tiring
+- [Liquid Glass](eras/2025-liquid-glass.md): Transparency fights long technical reading
+
+*Pick with these defaults:* **Material Design** + Dark Mode
+
+### Cybersecurity
+
+*Defaults:* marketing site · feel 2 · tone 1 · edge 2
+
+**Best fits**
+- [Linear Style (dark SaaS)](eras/2023-linear-style.md): Serious, precise, technical: signals competence
+- [Dark Mode](eras/2019-dark-mode.md): The expected look for security products and dashboards
+
+**Also works:** [Material Design](eras/2016-material-design.md), [Bento Grid](eras/2024-bento-grid.md), [Glassmorphism](eras/2021-glassmorphism.md)
+
+**Avoid**
+- [Neubrutalism](eras/2022-neubrutalism.md): Too playful for selling trust and protection
+- [Vibrant Gradients & Flat 2.0](eras/2018-gradients-flat-2.md): Startup-cheerful undermines seriousness
+- [Neumorphism](eras/2020-neumorphism.md): Vague controls in products about precision
+
+*Pick with these defaults:* **Linear Style (dark SaaS)** + Dark Mode + Bento Grid
 
 <!-- END GENERATED -->

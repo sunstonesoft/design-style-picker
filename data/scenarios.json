@@ -1,37 +1,165 @@
 {
   "$comment": "Regression briefs for the picker. `npm run check` fails if a top pick changes. Change an expectation only on purpose, and say why in the PR.",
   "scenarios": [
-    { "name": "Neighbourhood bakery, warm and fun (the picker.md example)",
-      "industry": "restaurant-food", "prefs": { "energy": 4, "tone": 4 },
-      "expectTop": "neubrutalism", "expectAddon": "bento-grid" },
-    { "name": "Dental clinic, calm, broad audience",
-      "industry": "healthcare", "prefs": { "energy": 1, "tone": 1, "edge": 1, "mode": "light" },
-      "expectTop": "material-design" },
-    { "name": "Crypto exchange marketing site, dark",
-      "industry": "web3", "prefs": { "energy": 2, "tone": 1, "edge": 1, "mode": "dark", "trend": "current" },
-      "expectTop": "linear-style" },
-    { "name": "B2B analytics web app",
-      "industry": "saas-b2b", "prefs": { "page": "app", "energy": 2, "tone": 1, "edge": 1, "mode": "light", "trend": "current" },
-      "expectTopOneOf": ["material-design", "linear-style"] },
-    { "name": "Indie game studio, bold and playful",
-      "industry": "gaming", "prefs": { "energy": 4, "tone": 4, "edge": 3, "effects": "rich" },
-      "expectTopOneOf": ["glassmorphism", "neubrutalism"] },
-    { "name": "Developer tool landing page, defaults only",
-      "industry": "devtools-ai", "prefs": {},
-      "expectTop": "linear-style", "expectAddon": "dark-mode" },
-    { "name": "Design studio portfolio, edgy",
-      "industry": "agency-portfolio", "prefs": { "energy": 5, "tone": 3, "edge": 5 },
-      "expectTop": "brutalism" },
-    { "name": "Kids' learning app marketing page",
-      "industry": "kids-family", "prefs": {},
-      "expectTopOneOf": ["neubrutalism", "gradients-flat-2"] },
-    { "name": "Government services portal",
-      "industry": "government", "prefs": {},
-      "expectTop": "material-design", "expectNotIn": ["glassmorphism", "liquid-glass", "neumorphism"] },
-    { "name": "Music streaming promo, rich effects",
-      "industry": "music-media", "prefs": { "effects": "rich", "trend": "current" },
-      "expectTop": "liquid-glass" },
-    { "name": "No industry default leaks Bento or Dark Mode into the main pick",
-      "industry": "*", "prefs": {}, "expectKindOfTop": "style" }
+    {
+      "name": "Neighbourhood bakery, warm and fun (the picker.md example)",
+      "industry": "restaurant-food",
+      "prefs": {
+        "energy": 4,
+        "tone": 4
+      },
+      "expectTop": "neubrutalism",
+      "expectAddon": "bento-grid"
+    },
+    {
+      "name": "Dental clinic, calm, broad audience",
+      "industry": "healthcare",
+      "prefs": {
+        "energy": 1,
+        "tone": 1,
+        "edge": 1,
+        "mode": "light"
+      },
+      "expectTop": "material-design"
+    },
+    {
+      "name": "Crypto exchange marketing site, dark",
+      "industry": "web3",
+      "prefs": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "mode": "dark",
+        "trend": "current"
+      },
+      "expectTop": "linear-style"
+    },
+    {
+      "name": "B2B analytics web app",
+      "industry": "saas-b2b",
+      "prefs": {
+        "page": "app",
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "mode": "light",
+        "trend": "current"
+      },
+      "expectTopOneOf": [
+        "material-design",
+        "linear-style"
+      ]
+    },
+    {
+      "name": "Indie game studio, bold and playful",
+      "industry": "gaming",
+      "prefs": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 3,
+        "effects": "rich"
+      },
+      "expectTopOneOf": [
+        "glassmorphism",
+        "neubrutalism"
+      ]
+    },
+    {
+      "name": "Developer tool landing page, defaults only",
+      "industry": "devtools-ai",
+      "prefs": {},
+      "expectTop": "linear-style",
+      "expectAddon": "dark-mode"
+    },
+    {
+      "name": "Design studio portfolio, edgy",
+      "industry": "agency-portfolio",
+      "prefs": {
+        "energy": 5,
+        "tone": 3,
+        "edge": 5
+      },
+      "expectTop": "brutalism"
+    },
+    {
+      "name": "Kids' learning app marketing page",
+      "industry": "kids-family",
+      "prefs": {},
+      "expectTopOneOf": [
+        "neubrutalism",
+        "gradients-flat-2"
+      ]
+    },
+    {
+      "name": "Government services portal",
+      "industry": "government",
+      "prefs": {},
+      "expectTop": "material-design",
+      "expectNotIn": [
+        "glassmorphism",
+        "liquid-glass",
+        "neumorphism"
+      ]
+    },
+    {
+      "name": "Music streaming promo, rich effects",
+      "industry": "music-media",
+      "prefs": {
+        "effects": "rich",
+        "trend": "current"
+      },
+      "expectTop": "liquid-glass"
+    },
+    {
+      "name": "No industry default leaks Bento or Dark Mode into the main pick",
+      "industry": "*",
+      "prefs": {},
+      "expectKindOfTop": "style"
+    },
+    {
+      "name": "Cozy indie game studio",
+      "industry": "games-cozy",
+      "prefs": {},
+      "expectTopOneOf": [
+        "neubrutalism",
+        "gradients-flat-2"
+      ]
+    },
+    {
+      "name": "Active trading app",
+      "industry": "trading",
+      "prefs": {},
+      "expectTop": "linear-style",
+      "expectNotIn": [
+        "glassmorphism",
+        "liquid-glass"
+      ]
+    },
+    {
+      "name": "Boxing gym landing page",
+      "industry": "fitness",
+      "prefs": {},
+      "expectTopOneOf": [
+        "neubrutalism",
+        "brutalism"
+      ]
+    },
+    {
+      "name": "Wedding photographer portfolio, rich effects",
+      "industry": "photography",
+      "prefs": {
+        "effects": "rich"
+      },
+      "expectTopOneOf": [
+        "brutalism",
+        "liquid-glass"
+      ]
+    },
+    {
+      "name": "Security product site",
+      "industry": "cybersecurity",
+      "prefs": {},
+      "expectTop": "linear-style"
+    }
   ]
 }

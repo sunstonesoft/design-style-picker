@@ -7,6 +7,7 @@
 - **Gallery** at `/gallery/`: one business in ten styles, with a side-by-side compare view.
 - **Feedback button**: "Not really" under a pick opens a pre-filled industry-fit issue.
 - **Picker**: "Why not…?" explains any style outside the top three; shared links carry a model version and say when results were updated since.
+- **Industries**: 36 (was 28). Gaming split into esports and cozy/indie, fintech split into consumer banking and trading; added fitness, beauty salons, pets, photography, open-source projects and cybersecurity, each with regression briefs.
 - **Data**: JSON Schema for `data/picker.json` (editor validation).
 - **CI**: weekly link checker (dead sources open an issue); axe-core accessibility run on every demo in light and dark (`scripts/a11y.mjs`).
 - **Fixes**: Linear-style tertiary grey raised to pass AA (the widely copied `#62666d` is 3.45:1); bento switcher selector collision and accent contrast; Liquid Glass accent contrast; the dead Gumroad source now points to an archived copy.
@@ -15,7 +16,7 @@
 
 First public release.
 
-- **Picker:** 28 industries × 10 styles, with strong / works / avoid ratings and reasons, page-type fit, taste sliders, effect tolerance, base styles vs add-ons (Bento layout, Dark theme), tie handling, and industry defaults where nothing is answered.
+- **Picker:** 36 industries × 10 styles, with strong / works / avoid ratings and reasons, page-type fit, taste sliders, effect tolerance, base styles vs add-ons (Bento layout, Dark theme), tie handling, and industry defaults where nothing is answered.
 - **Website** (GitHub Pages): interactive picker with live style previews, shareable result links, a "copy prompt for your AI agent" button, and a style gallery.
 - **Ten style guides**, 2016–2025. 2021 Glassmorphism is written deep, with a sourced recipe table, layout recipes, performance, anti-patterns and a live demo. The other nine are at a basic level.
 - **Regression scenarios** (`data/scenarios.json`) plus a check that no single style wins most industries.

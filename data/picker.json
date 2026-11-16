@@ -14,176 +14,1201 @@
     "pages": "suitability per page type: 0 = poor · 1 = usable · 2 = great"
   },
   "styles": [
-    { "id": "material-design", "kind": "style", "demo": true, "year": 2016, "name": "Material Design", "file": "eras/2016-material-design.md",
+    {
+      "id": "material-design",
+      "kind": "style",
+      "demo": true,
+      "year": 2016,
+      "name": "Material Design",
+      "file": "eras/2016-material-design.md",
       "tagline": "Paper layers, bold colour, proven components",
-      "traits": { "energy": 3, "tone": 2, "edge": 1, "freshness": 1, "density": 3, "a11yRisk": 1, "mode": "light",
-                  "pages": { "marketing": 1, "app": 2, "content": 2, "store": 2 } } },
-    { "id": "brutalism", "kind": "style", "demo": true, "year": 2017, "name": "Web Brutalism", "file": "eras/2017-brutalism.md",
+      "traits": {
+        "energy": 3,
+        "tone": 2,
+        "edge": 1,
+        "freshness": 1,
+        "density": 3,
+        "a11yRisk": 1,
+        "mode": "light",
+        "pages": {
+          "marketing": 1,
+          "app": 2,
+          "content": 2,
+          "store": 2
+        }
+      }
+    },
+    {
+      "id": "brutalism",
+      "kind": "style",
+      "demo": true,
+      "year": 2017,
+      "name": "Web Brutalism",
+      "file": "eras/2017-brutalism.md",
       "tagline": "Raw HTML honesty, rules broken on purpose",
-      "traits": { "energy": 5, "tone": 3, "edge": 5, "freshness": 2, "density": 2, "a11yRisk": 2, "mode": "light",
-                  "pages": { "marketing": 2, "app": 0, "content": 2, "store": 0 } } },
-    { "id": "gradients-flat-2", "kind": "style", "demo": true, "year": 2018, "name": "Vibrant Gradients & Flat 2.0", "file": "eras/2018-gradients-flat-2.md",
+      "traits": {
+        "energy": 5,
+        "tone": 3,
+        "edge": 5,
+        "freshness": 2,
+        "density": 2,
+        "a11yRisk": 2,
+        "mode": "light",
+        "pages": {
+          "marketing": 2,
+          "app": 0,
+          "content": 2,
+          "store": 0
+        }
+      }
+    },
+    {
+      "id": "gradients-flat-2",
+      "kind": "style",
+      "demo": true,
+      "year": 2018,
+      "name": "Vibrant Gradients & Flat 2.0",
+      "file": "eras/2018-gradients-flat-2.md",
       "tagline": "Optimistic gradients, flat illustration, startup energy",
-      "traits": { "energy": 4, "tone": 4, "edge": 2, "freshness": 1, "density": 2, "a11yRisk": 2, "mode": "light",
-                  "pages": { "marketing": 2, "app": 1, "content": 1, "store": 1 } } },
-    { "id": "dark-mode", "kind": "theme", "demo": true, "year": 2019, "name": "Dark Mode", "file": "eras/2019-dark-mode.md",
+      "traits": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 2,
+        "freshness": 1,
+        "density": 2,
+        "a11yRisk": 2,
+        "mode": "light",
+        "pages": {
+          "marketing": 2,
+          "app": 1,
+          "content": 1,
+          "store": 1
+        }
+      }
+    },
+    {
+      "id": "dark-mode",
+      "kind": "theme",
+      "demo": true,
+      "year": 2019,
+      "name": "Dark Mode",
+      "file": "eras/2019-dark-mode.md",
       "tagline": "Calm dark surfaces that follow the system",
-      "traits": { "energy": 2, "tone": 2, "edge": 1, "freshness": 4, "density": 3, "a11yRisk": 1, "mode": "dark",
-                  "pages": { "marketing": 1, "app": 2, "content": 2, "store": 1 } } },
-    { "id": "neumorphism", "kind": "style", "demo": true, "year": 2020, "name": "Neumorphism", "file": "eras/2020-neumorphism.md",
+      "traits": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 1,
+        "freshness": 4,
+        "density": 3,
+        "a11yRisk": 1,
+        "mode": "dark",
+        "pages": {
+          "marketing": 1,
+          "app": 2,
+          "content": 2,
+          "store": 1
+        }
+      }
+    },
+    {
+      "id": "neumorphism",
+      "kind": "style",
+      "demo": true,
+      "year": 2020,
+      "name": "Neumorphism",
+      "file": "eras/2020-neumorphism.md",
       "tagline": "Soft moulded plastic, one surface, two shadows",
-      "traits": { "energy": 1, "tone": 2, "edge": 4, "freshness": 1, "density": 1, "a11yRisk": 3, "mode": "light",
-                  "pages": { "marketing": 1, "app": 0, "content": 0, "store": 0 } } },
-    { "id": "glassmorphism", "kind": "style", "demo": true, "year": 2021, "name": "Glassmorphism", "file": "eras/2021-glassmorphism.md",
+      "traits": {
+        "energy": 1,
+        "tone": 2,
+        "edge": 4,
+        "freshness": 1,
+        "density": 1,
+        "a11yRisk": 3,
+        "mode": "light",
+        "pages": {
+          "marketing": 1,
+          "app": 0,
+          "content": 0,
+          "store": 0
+        }
+      }
+    },
+    {
+      "id": "glassmorphism",
+      "kind": "style",
+      "demo": true,
+      "year": 2021,
+      "name": "Glassmorphism",
+      "file": "eras/2021-glassmorphism.md",
       "tagline": "Frosted panels floating over vivid colour",
-      "traits": { "energy": 3, "tone": 3, "edge": 3, "freshness": 2, "density": 1, "a11yRisk": 3, "mode": "both",
-                  "pages": { "marketing": 2, "app": 0, "content": 0, "store": 0 } } },
-    { "id": "neubrutalism", "kind": "style", "demo": true, "year": 2022, "name": "Neubrutalism", "file": "eras/2022-neubrutalism.md",
+      "traits": {
+        "energy": 3,
+        "tone": 3,
+        "edge": 3,
+        "freshness": 2,
+        "density": 1,
+        "a11yRisk": 3,
+        "mode": "both",
+        "pages": {
+          "marketing": 2,
+          "app": 0,
+          "content": 0,
+          "store": 0
+        }
+      }
+    },
+    {
+      "id": "neubrutalism",
+      "kind": "style",
+      "demo": true,
+      "year": 2022,
+      "name": "Neubrutalism",
+      "file": "eras/2022-neubrutalism.md",
       "tagline": "Thick outlines, hard shadows, sticker-sheet fun",
-      "traits": { "energy": 5, "tone": 5, "edge": 4, "freshness": 3, "density": 2, "a11yRisk": 2, "mode": "light",
-                  "pages": { "marketing": 2, "app": 1, "content": 1, "store": 2 } } },
-    { "id": "linear-style", "kind": "style", "demo": true, "year": 2023, "name": "Linear Style (dark SaaS)", "file": "eras/2023-linear-style.md",
+      "traits": {
+        "energy": 5,
+        "tone": 5,
+        "edge": 4,
+        "freshness": 3,
+        "density": 2,
+        "a11yRisk": 2,
+        "mode": "light",
+        "pages": {
+          "marketing": 2,
+          "app": 1,
+          "content": 1,
+          "store": 2
+        }
+      }
+    },
+    {
+      "id": "linear-style",
+      "kind": "style",
+      "demo": true,
+      "year": 2023,
+      "name": "Linear Style (dark SaaS)",
+      "file": "eras/2023-linear-style.md",
       "tagline": "Near-black, one glow, hairlines, product-first",
-      "traits": { "energy": 2, "tone": 1, "edge": 2, "freshness": 4, "density": 2, "a11yRisk": 2, "mode": "dark",
-                  "pages": { "marketing": 2, "app": 2, "content": 1, "store": 0 } } },
-    { "id": "bento-grid", "kind": "layout", "demo": true, "year": 2024, "name": "Bento Grid", "file": "eras/2024-bento-grid.md",
+      "traits": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 2,
+        "freshness": 4,
+        "density": 2,
+        "a11yRisk": 2,
+        "mode": "dark",
+        "pages": {
+          "marketing": 2,
+          "app": 2,
+          "content": 1,
+          "store": 0
+        }
+      }
+    },
+    {
+      "id": "bento-grid",
+      "kind": "layout",
+      "demo": true,
+      "year": 2024,
+      "name": "Bento Grid",
+      "file": "eras/2024-bento-grid.md",
       "tagline": "Rounded tiles, one idea each, Apple-keynote tidy",
-      "traits": { "energy": 3, "tone": 3, "edge": 2, "freshness": 5, "density": 2, "a11yRisk": 1, "mode": "both",
-                  "pages": { "marketing": 2, "app": 1, "content": 0, "store": 2 } } },
-    { "id": "liquid-glass", "kind": "style", "demo": true, "year": 2025, "name": "Liquid Glass", "file": "eras/2025-liquid-glass.md",
+      "traits": {
+        "energy": 3,
+        "tone": 3,
+        "edge": 2,
+        "freshness": 5,
+        "density": 2,
+        "a11yRisk": 1,
+        "mode": "both",
+        "pages": {
+          "marketing": 2,
+          "app": 1,
+          "content": 0,
+          "store": 2
+        }
+      }
+    },
+    {
+      "id": "liquid-glass",
+      "kind": "style",
+      "demo": true,
+      "year": 2025,
+      "name": "Liquid Glass",
+      "file": "eras/2025-liquid-glass.md",
       "tagline": "Refracting glass controls over full-bleed content",
-      "traits": { "energy": 3, "tone": 2, "edge": 3, "freshness": 5, "density": 1, "a11yRisk": 3, "mode": "both",
-                  "pages": { "marketing": 2, "app": 1, "content": 0, "store": 1 } } }
+      "traits": {
+        "energy": 3,
+        "tone": 2,
+        "edge": 3,
+        "freshness": 5,
+        "density": 1,
+        "a11yRisk": 3,
+        "mode": "both",
+        "pages": {
+          "marketing": 2,
+          "app": 1,
+          "content": 0,
+          "store": 1
+        }
+      }
+    }
   ],
   "industries": [
-    { "id": "saas-b2b", "name": "B2B SaaS", "defaults": { "energy": 2, "tone": 2, "edge": 2, "page": "marketing" },
-      "strong": { "linear-style": "Signals a fast, precise product; screenshots do the selling", "bento-grid": "Turns a long feature list into one scannable overview" },
-      "works": ["dark-mode", "glassmorphism", "material-design", "liquid-glass"],
-      "avoid": { "brutalism": "Buyers need trust and clarity, not provocation", "neumorphism": "Low-contrast controls in a product people evaluate on usability" } },
-    { "id": "devtools-ai", "name": "Developer tools & AI products", "defaults": { "energy": 2, "tone": 2, "edge": 2, "page": "marketing" },
-      "strong": { "linear-style": "The house style of modern dev tools; reads as 'built by engineers'", "dark-mode": "Developers live in dark editors; dark docs feel native" },
-      "works": ["bento-grid", "glassmorphism", "liquid-glass", "brutalism"],
-      "avoid": { "neumorphism": "Soft and vague where developers expect precision", "gradients-flat-2": "Reads like a 2018 growth-marketing page" } },
-    { "id": "fintech", "name": "Fintech, banking & payments", "defaults": { "energy": 2, "tone": 2, "edge": 1, "page": "marketing" },
-      "strong": { "linear-style": "Precise, restrained product look that signals competence with money", "bento-grid": "Balances, stats and features fit naturally into tiles" },
-      "works": ["glassmorphism", "dark-mode", "material-design", "liquid-glass", "gradients-flat-2"],
-      "avoid": { "brutalism": "Raw anti-design undermines trust with money", "neumorphism": "Unclear buttons are dangerous in payment flows" } },
-    { "id": "ecommerce", "name": "E-commerce & retail", "defaults": { "energy": 3, "tone": 3, "edge": 2, "page": "store" },
-      "strong": { "bento-grid": "Category and product tiles of varied size sell visually", "material-design": "Proven patterns for dense catalogs, filters and checkout" },
-      "works": ["neubrutalism", "liquid-glass", "dark-mode", "gradients-flat-2"],
-      "avoid": { "neumorphism": "Product photos need contrast, not grey-on-grey", "glassmorphism": "Text over busy product imagery loses legibility" } },
-    { "id": "restaurant-food", "name": "Restaurants, cafés & food brands", "defaults": { "energy": 4, "tone": 4, "edge": 3, "page": "marketing" },
-      "strong": { "neubrutalism": "Playful, indie, appetising colour blocks with personality", "bento-grid": "Menu highlights, hours, location and reviews as neat tiles" },
-      "works": ["brutalism", "gradients-flat-2", "liquid-glass", "dark-mode"],
-      "avoid": { "linear-style": "Cold developer aesthetic kills appetite", "neumorphism": "Washed-out grey makes food look bland" } },
-    { "id": "healthcare", "name": "Healthcare & medical", "defaults": { "energy": 2, "tone": 2, "edge": 1, "page": "marketing" },
-      "strong": { "material-design": "Clear, accessible, familiar patterns for anxious users of all ages", "bento-grid": "Services, locations and booking as calm, scannable tiles" },
-      "works": ["dark-mode", "gradients-flat-2"],
-      "avoid": { "glassmorphism": "Legibility risk for older and low-vision patients", "neumorphism": "Fails contrast where accessibility is non-negotiable", "brutalism": "Feels careless where care is the product", "liquid-glass": "Transparency harms readability for the users who need it most" } },
-    { "id": "professional-services", "name": "Law, accounting & consulting", "defaults": { "energy": 2, "tone": 1, "edge": 1, "page": "marketing" },
-      "strong": { "linear-style": "Restrained, premium look for high-end consultancies", "bento-grid": "Practice areas and credentials in an orderly overview" },
-      "works": ["material-design", "dark-mode"],
-      "avoid": { "neubrutalism": "Too playful for serious advice", "gradients-flat-2": "Reads cheap and dated for premium services", "neumorphism": "Vague UI erodes the sense of rigour" } },
-    { "id": "real-estate", "name": "Real estate & property", "defaults": { "energy": 2, "tone": 2, "edge": 1, "page": "marketing" },
-      "strong": { "bento-grid": "Listing highlights (beds, price, map) as tiles" },
-      "works": ["liquid-glass", "glassmorphism", "material-design", "dark-mode"],
-      "avoid": { "brutalism": "Buyers want polish and trust", "neumorphism": "Hides the photos that sell the property" } },
-    { "id": "agency-portfolio", "name": "Creative agencies, studios & portfolios", "defaults": { "energy": 4, "tone": 3, "edge": 4, "page": "marketing" },
-      "strong": { "brutalism": "The portfolio genre's signature: confident, opinionated, memorable", "neubrutalism": "Shows personality and craft while staying usable" },
-      "works": ["bento-grid", "glassmorphism", "linear-style", "liquid-glass", "dark-mode"],
-      "avoid": { "material-design": "Looks like a template; a portfolio must not" } },
-    { "id": "creator", "name": "Creators, coaches & personal brands", "defaults": { "energy": 4, "tone": 4, "edge": 3, "page": "marketing" },
-      "strong": { "neubrutalism": "Approachable and loud; stands out in a feed", "bento-grid": "The link-in-bio format people already know" },
-      "works": ["gradients-flat-2", "glassmorphism", "brutalism", "liquid-glass"],
-      "avoid": { "material-design": "Generic app look hides the personality you're selling" } },
-    { "id": "education", "name": "Education & e-learning", "defaults": { "energy": 3, "tone": 3, "edge": 2, "page": "content" },
-      "strong": { "material-design": "Handles dense lessons, forms and dashboards accessibly" },
-      "works": ["neubrutalism", "bento-grid", "gradients-flat-2", "dark-mode"],
-      "avoid": { "glassmorphism": "Long text on glass is tiring", "neumorphism": "Learners need obvious controls", "liquid-glass": "Transparency fights reading" } },
-    { "id": "nonprofit", "name": "Nonprofits & community organisations", "defaults": { "energy": 4, "tone": 4, "edge": 3, "page": "marketing" },
-      "strong": { "neubrutalism": "Grassroots, human, energetic without looking corporate", "bento-grid": "Impact numbers, stories and donate CTA as clear tiles" },
-      "works": ["material-design", "gradients-flat-2", "brutalism", "linear-style"],
-      "avoid": { "glassmorphism": "Style over substance for donors", "neumorphism": "Low contrast excludes part of your audience" } },
-    { "id": "gaming", "name": "Gaming, esports & entertainment", "defaults": { "energy": 4, "tone": 4, "edge": 3, "page": "marketing" },
-      "strong": { "glassmorphism": "Glass HUD-like panels over vivid key art", "dark-mode": "Gamers expect dark; art and trailers pop on it" },
-      "works": ["linear-style", "liquid-glass", "neubrutalism", "brutalism", "bento-grid"],
-      "avoid": { "material-design": "Feels like a utility app, not a world", "neumorphism": "Too soft and quiet for the genre" } },
-    { "id": "music-media", "name": "Music, film & media", "defaults": { "energy": 4, "tone": 3, "edge": 3, "page": "marketing" },
-      "strong": { "glassmorphism": "Player widgets and overlays over cover art: the style's home turf", "liquid-glass": "Floating controls over full-bleed video and artwork" },
-      "works": ["dark-mode", "brutalism", "bento-grid", "neubrutalism"],
-      "avoid": { "material-design": "Utility look flattens artistic identity", "neumorphism": "Muted grey drowns the artwork" } },
-    { "id": "luxury-fashion", "name": "Luxury, fashion & beauty", "defaults": { "energy": 2, "tone": 1, "edge": 3, "page": "marketing" },
+    {
+      "id": "saas-b2b",
+      "name": "B2B SaaS",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "linear-style": "Signals a fast, precise product; screenshots do the selling",
+        "bento-grid": "Turns a long feature list into one scannable overview"
+      },
+      "works": [
+        "dark-mode",
+        "glassmorphism",
+        "material-design",
+        "liquid-glass"
+      ],
+      "avoid": {
+        "brutalism": "Buyers need trust and clarity, not provocation",
+        "neumorphism": "Low-contrast controls in a product people evaluate on usability"
+      }
+    },
+    {
+      "id": "devtools-ai",
+      "name": "Developer tools & AI products",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "linear-style": "The house style of modern dev tools; reads as 'built by engineers'",
+        "dark-mode": "Developers live in dark editors; dark docs feel native"
+      },
+      "works": [
+        "bento-grid",
+        "glassmorphism",
+        "liquid-glass",
+        "brutalism"
+      ],
+      "avoid": {
+        "neumorphism": "Soft and vague where developers expect precision",
+        "gradients-flat-2": "Reads like a 2018 growth-marketing page"
+      }
+    },
+    {
+      "id": "fintech",
+      "name": "Fintech, consumer banking & payments",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 1,
+        "page": "marketing"
+      },
+      "strong": {
+        "linear-style": "Precise, restrained product look that signals competence with money",
+        "bento-grid": "Balances, stats and features fit naturally into tiles"
+      },
+      "works": [
+        "glassmorphism",
+        "dark-mode",
+        "material-design",
+        "liquid-glass",
+        "gradients-flat-2"
+      ],
+      "avoid": {
+        "brutalism": "Raw anti-design undermines trust with money",
+        "neumorphism": "Unclear buttons are dangerous in payment flows"
+      }
+    },
+    {
+      "id": "ecommerce",
+      "name": "E-commerce & retail",
+      "defaults": {
+        "energy": 3,
+        "tone": 3,
+        "edge": 2,
+        "page": "store"
+      },
+      "strong": {
+        "bento-grid": "Category and product tiles of varied size sell visually",
+        "material-design": "Proven patterns for dense catalogs, filters and checkout"
+      },
+      "works": [
+        "neubrutalism",
+        "liquid-glass",
+        "dark-mode",
+        "gradients-flat-2"
+      ],
+      "avoid": {
+        "neumorphism": "Product photos need contrast, not grey-on-grey",
+        "glassmorphism": "Text over busy product imagery loses legibility"
+      }
+    },
+    {
+      "id": "restaurant-food",
+      "name": "Restaurants, cafés & food brands",
+      "defaults": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Playful, indie, appetising colour blocks with personality",
+        "bento-grid": "Menu highlights, hours, location and reviews as neat tiles"
+      },
+      "works": [
+        "brutalism",
+        "gradients-flat-2",
+        "liquid-glass",
+        "dark-mode"
+      ],
+      "avoid": {
+        "linear-style": "Cold developer aesthetic kills appetite",
+        "neumorphism": "Washed-out grey makes food look bland"
+      }
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare & medical",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 1,
+        "page": "marketing"
+      },
+      "strong": {
+        "material-design": "Clear, accessible, familiar patterns for anxious users of all ages",
+        "bento-grid": "Services, locations and booking as calm, scannable tiles"
+      },
+      "works": [
+        "dark-mode",
+        "gradients-flat-2"
+      ],
+      "avoid": {
+        "glassmorphism": "Legibility risk for older and low-vision patients",
+        "neumorphism": "Fails contrast where accessibility is non-negotiable",
+        "brutalism": "Feels careless where care is the product",
+        "liquid-glass": "Transparency harms readability for the users who need it most"
+      }
+    },
+    {
+      "id": "professional-services",
+      "name": "Law, accounting & consulting",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "page": "marketing"
+      },
+      "strong": {
+        "linear-style": "Restrained, premium look for high-end consultancies",
+        "bento-grid": "Practice areas and credentials in an orderly overview"
+      },
+      "works": [
+        "material-design",
+        "dark-mode"
+      ],
+      "avoid": {
+        "neubrutalism": "Too playful for serious advice",
+        "gradients-flat-2": "Reads cheap and dated for premium services",
+        "neumorphism": "Vague UI erodes the sense of rigour"
+      }
+    },
+    {
+      "id": "real-estate",
+      "name": "Real estate & property",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 1,
+        "page": "marketing"
+      },
+      "strong": {
+        "bento-grid": "Listing highlights (beds, price, map) as tiles"
+      },
+      "works": [
+        "liquid-glass",
+        "glassmorphism",
+        "material-design",
+        "dark-mode"
+      ],
+      "avoid": {
+        "brutalism": "Buyers want polish and trust",
+        "neumorphism": "Hides the photos that sell the property"
+      }
+    },
+    {
+      "id": "agency-portfolio",
+      "name": "Creative agencies, studios & portfolios",
+      "defaults": {
+        "energy": 4,
+        "tone": 3,
+        "edge": 4,
+        "page": "marketing"
+      },
+      "strong": {
+        "brutalism": "The portfolio genre's signature: confident, opinionated, memorable",
+        "neubrutalism": "Shows personality and craft while staying usable"
+      },
+      "works": [
+        "bento-grid",
+        "glassmorphism",
+        "linear-style",
+        "liquid-glass",
+        "dark-mode"
+      ],
+      "avoid": {
+        "material-design": "Looks like a template; a portfolio must not"
+      }
+    },
+    {
+      "id": "creator",
+      "name": "Creators, coaches & personal brands",
+      "defaults": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Approachable and loud; stands out in a feed",
+        "bento-grid": "The link-in-bio format people already know"
+      },
+      "works": [
+        "gradients-flat-2",
+        "glassmorphism",
+        "brutalism",
+        "liquid-glass"
+      ],
+      "avoid": {
+        "material-design": "Generic app look hides the personality you're selling"
+      }
+    },
+    {
+      "id": "education",
+      "name": "Education & e-learning",
+      "defaults": {
+        "energy": 3,
+        "tone": 3,
+        "edge": 2,
+        "page": "content"
+      },
+      "strong": {
+        "material-design": "Handles dense lessons, forms and dashboards accessibly"
+      },
+      "works": [
+        "neubrutalism",
+        "bento-grid",
+        "gradients-flat-2",
+        "dark-mode"
+      ],
+      "avoid": {
+        "glassmorphism": "Long text on glass is tiring",
+        "neumorphism": "Learners need obvious controls",
+        "liquid-glass": "Transparency fights reading"
+      }
+    },
+    {
+      "id": "nonprofit",
+      "name": "Nonprofits & community organisations",
+      "defaults": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Grassroots, human, energetic without looking corporate",
+        "bento-grid": "Impact numbers, stories and donate CTA as clear tiles"
+      },
+      "works": [
+        "material-design",
+        "gradients-flat-2",
+        "brutalism",
+        "linear-style"
+      ],
+      "avoid": {
+        "glassmorphism": "Style over substance for donors",
+        "neumorphism": "Low contrast excludes part of your audience"
+      }
+    },
+    {
+      "id": "gaming",
+      "name": "Esports & competitive games",
+      "defaults": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "glassmorphism": "Glass HUD-like panels over vivid key art",
+        "dark-mode": "Gamers expect dark; art and trailers pop on it"
+      },
+      "works": [
+        "linear-style",
+        "liquid-glass",
+        "neubrutalism",
+        "brutalism",
+        "bento-grid"
+      ],
+      "avoid": {
+        "material-design": "Feels like a utility app, not a world",
+        "neumorphism": "Too soft and quiet for the genre"
+      }
+    },
+    {
+      "id": "music-media",
+      "name": "Music, film & media",
+      "defaults": {
+        "energy": 4,
+        "tone": 3,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "glassmorphism": "Player widgets and overlays over cover art: the style's home turf",
+        "liquid-glass": "Floating controls over full-bleed video and artwork"
+      },
+      "works": [
+        "dark-mode",
+        "brutalism",
+        "bento-grid",
+        "neubrutalism"
+      ],
+      "avoid": {
+        "material-design": "Utility look flattens artistic identity",
+        "neumorphism": "Muted grey drowns the artwork"
+      }
+    },
+    {
+      "id": "luxury-fashion",
+      "name": "Luxury, fashion & beauty",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 3,
+        "page": "marketing"
+      },
       "strong": {},
-      "works": ["liquid-glass", "brutalism", "glassmorphism", "dark-mode", "linear-style"],
-      "avoid": { "gradients-flat-2": "Startup-cheerful, not exclusive", "neubrutalism": "Cartoonish for luxury", "material-design": "Mass-market app look" } },
-    { "id": "local-trades", "name": "Local trades & home services", "defaults": { "energy": 3, "tone": 2, "edge": 1, "page": "marketing" },
-      "strong": { "material-design": "Fast, clear, phone-friendly: call, quote, book", "bento-grid": "Services, areas, reviews and contact at a glance" },
-      "works": ["gradients-flat-2", "neubrutalism", "dark-mode"],
-      "avoid": { "glassmorphism": "Style gets in the way of 'call now'", "liquid-glass": "Heavy effects on cheap phones and older visitors", "brutalism": "Looks unfinished to customers judging trust", "neumorphism": "Unclear buttons lose leads" } },
-    { "id": "web3", "name": "Crypto & web3", "defaults": { "energy": 3, "tone": 2, "edge": 3, "page": "marketing" },
-      "strong": { "glassmorphism": "The sector's visual signature since 2021: glass over neon", "linear-style": "Serious, technical dark look for infrastructure projects" },
-      "works": ["dark-mode", "liquid-glass", "neubrutalism", "bento-grid", "gradients-flat-2", "material-design"],
-      "avoid": {} },
-    { "id": "kids-family", "name": "Kids & family products", "defaults": { "energy": 4, "tone": 5, "edge": 2, "page": "marketing" },
-      "strong": { "neubrutalism": "Bright, chunky, toy-like, and clear for parents", "gradients-flat-2": "Cheerful colour and friendly illustration" },
-      "works": ["material-design", "bento-grid"],
-      "avoid": { "linear-style": "Dark and corporate", "brutalism": "Confusing and harsh", "glassmorphism": "Low contrast for parents skimming on phones" } },
-    { "id": "hardware-iot", "name": "Hardware & smart devices", "defaults": { "energy": 3, "tone": 2, "edge": 2, "page": "marketing" },
-      "strong": { "liquid-glass": "Premium product-shot pages with floating controls" },
-      "works": ["neumorphism", "glassmorphism", "bento-grid", "dark-mode", "linear-style"],
-      "avoid": { "brutalism": "Undercuts perceived build quality" } },
-    { "id": "events", "name": "Events, conferences & festivals", "defaults": { "energy": 4, "tone": 4, "edge": 3, "page": "marketing" },
-      "strong": { "neubrutalism": "Poster-like energy, schedules in bold blocks", "gradients-flat-2": "Vivid, celebratory, works on banners and tickets" },
-      "works": ["brutalism", "glassmorphism", "bento-grid", "dark-mode", "material-design"],
-      "avoid": { "neumorphism": "Too quiet for an event" } },
-    { "id": "industrial", "name": "Manufacturing & industrial B2B", "defaults": { "energy": 2, "tone": 1, "edge": 1, "page": "marketing" },
-      "strong": { "material-design": "Spec-heavy pages, catalogs and quote forms stay clear", "bento-grid": "Capabilities, certifications and stats as tiles" },
-      "works": ["dark-mode", "linear-style"],
-      "avoid": { "glassmorphism": "Decoration over specs buyers came for", "liquid-glass": "Effects without purpose for procurement teams", "neubrutalism": "Too playful for industrial trust" } },
-    { "id": "wellness", "name": "Wellness, spa & mindfulness", "defaults": { "energy": 2, "tone": 2, "edge": 2, "page": "marketing" },
+      "works": [
+        "liquid-glass",
+        "brutalism",
+        "glassmorphism",
+        "dark-mode",
+        "linear-style"
+      ],
+      "avoid": {
+        "gradients-flat-2": "Startup-cheerful, not exclusive",
+        "neubrutalism": "Cartoonish for luxury",
+        "material-design": "Mass-market app look"
+      }
+    },
+    {
+      "id": "local-trades",
+      "name": "Local trades & home services",
+      "defaults": {
+        "energy": 3,
+        "tone": 2,
+        "edge": 1,
+        "page": "marketing"
+      },
+      "strong": {
+        "material-design": "Fast, clear, phone-friendly: call, quote, book",
+        "bento-grid": "Services, areas, reviews and contact at a glance"
+      },
+      "works": [
+        "gradients-flat-2",
+        "neubrutalism",
+        "dark-mode"
+      ],
+      "avoid": {
+        "glassmorphism": "Style gets in the way of 'call now'",
+        "liquid-glass": "Heavy effects on cheap phones and older visitors",
+        "brutalism": "Looks unfinished to customers judging trust",
+        "neumorphism": "Unclear buttons lose leads"
+      }
+    },
+    {
+      "id": "web3",
+      "name": "Crypto & web3",
+      "defaults": {
+        "energy": 3,
+        "tone": 2,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "glassmorphism": "The sector's visual signature since 2021: glass over neon",
+        "linear-style": "Serious, technical dark look for infrastructure projects"
+      },
+      "works": [
+        "dark-mode",
+        "liquid-glass",
+        "neubrutalism",
+        "bento-grid",
+        "gradients-flat-2",
+        "material-design"
+      ],
+      "avoid": {}
+    },
+    {
+      "id": "kids-family",
+      "name": "Kids & family products",
+      "defaults": {
+        "energy": 4,
+        "tone": 5,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Bright, chunky, toy-like, and clear for parents",
+        "gradients-flat-2": "Cheerful colour and friendly illustration"
+      },
+      "works": [
+        "material-design",
+        "bento-grid"
+      ],
+      "avoid": {
+        "linear-style": "Dark and corporate",
+        "brutalism": "Confusing and harsh",
+        "glassmorphism": "Low contrast for parents skimming on phones"
+      }
+    },
+    {
+      "id": "hardware-iot",
+      "name": "Hardware & smart devices",
+      "defaults": {
+        "energy": 3,
+        "tone": 2,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "liquid-glass": "Premium product-shot pages with floating controls"
+      },
+      "works": [
+        "neumorphism",
+        "glassmorphism",
+        "bento-grid",
+        "dark-mode",
+        "linear-style"
+      ],
+      "avoid": {
+        "brutalism": "Undercuts perceived build quality"
+      }
+    },
+    {
+      "id": "events",
+      "name": "Events, conferences & festivals",
+      "defaults": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Poster-like energy, schedules in bold blocks",
+        "gradients-flat-2": "Vivid, celebratory, works on banners and tickets"
+      },
+      "works": [
+        "brutalism",
+        "glassmorphism",
+        "bento-grid",
+        "dark-mode",
+        "material-design"
+      ],
+      "avoid": {
+        "neumorphism": "Too quiet for an event"
+      }
+    },
+    {
+      "id": "industrial",
+      "name": "Manufacturing & industrial B2B",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "page": "marketing"
+      },
+      "strong": {
+        "material-design": "Spec-heavy pages, catalogs and quote forms stay clear",
+        "bento-grid": "Capabilities, certifications and stats as tiles"
+      },
+      "works": [
+        "dark-mode",
+        "linear-style"
+      ],
+      "avoid": {
+        "glassmorphism": "Decoration over specs buyers came for",
+        "liquid-glass": "Effects without purpose for procurement teams",
+        "neubrutalism": "Too playful for industrial trust"
+      }
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness, spa & mindfulness",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 2,
+        "page": "marketing"
+      },
       "strong": {},
-      "works": ["glassmorphism", "liquid-glass", "neumorphism", "bento-grid", "gradients-flat-2", "dark-mode"],
-      "avoid": { "material-design": "Clinical app look, not restorative", "brutalism": "Harsh where calm is the promise", "neubrutalism": "Loud where quiet sells", "linear-style": "Tech-cold, not restorative" } },
-    { "id": "dashboards", "name": "Dashboards & internal tools", "defaults": { "energy": 2, "tone": 1, "edge": 1, "page": "app" },
-      "strong": { "material-design": "Complete component system for dense, data-heavy UIs", "dark-mode": "Long sessions, charts and tables on calm dark surfaces" },
-      "works": ["linear-style", "bento-grid"],
-      "avoid": { "glassmorphism": "Data on glass dissolves", "liquid-glass": "Transparency fights tables and charts", "neumorphism": "Unclear controls slow daily work", "brutalism": "Daily tools need conventions" } },
-    { "id": "travel-hospitality", "name": "Travel, hotels & hospitality", "defaults": { "energy": 3, "tone": 3, "edge": 2, "page": "marketing" },
-      "strong": { "bento-grid": "Rooms, amenities, location and reviews as photo tiles" },
-      "works": ["liquid-glass", "glassmorphism", "material-design", "gradients-flat-2", "dark-mode"],
-      "avoid": { "brutalism": "Guests book on trust and comfort", "neumorphism": "Greys out the photography that sells the stay" } },
-    { "id": "news-publishing", "name": "News, magazines & publishing", "defaults": { "energy": 2, "tone": 2, "edge": 2, "page": "content" },
-      "strong": { "dark-mode": "Readers expect a comfortable night-reading option" },
-      "works": ["material-design", "brutalism", "bento-grid"],
-      "avoid": { "glassmorphism": "Long-form text on glass is tiring", "liquid-glass": "Transparency fights reading", "neumorphism": "Low contrast for text-first pages", "gradients-flat-2": "Reads like a startup, not a publication" } },
-    { "id": "government", "name": "Government & public services", "defaults": { "energy": 2, "tone": 1, "edge": 1, "page": "content" },
-      "strong": { "material-design": "Conventional, accessible components everyone already knows" },
-      "works": ["dark-mode", "bento-grid"],
-      "avoid": { "glassmorphism": "Accessibility is a legal duty here", "liquid-glass": "Accessibility is a legal duty here", "neumorphism": "Fails contrast rules public sites must meet", "brutalism": "Citizens need clarity, not provocation", "neubrutalism": "Too playful for official services" } },
-    { "id": "research-science", "name": "Research, science & universities", "defaults": { "energy": 2, "tone": 1, "edge": 2, "page": "content" },
-      "strong": { "material-design": "Handles papers, data and dense navigation clearly" },
-      "works": ["dark-mode", "linear-style", "brutalism", "bento-grid"],
-      "avoid": { "glassmorphism": "Decoration over dense information", "neumorphism": "Low contrast for reading-heavy pages" } },
-    { "id": "logistics", "name": "Logistics, transport & delivery", "defaults": { "energy": 2, "tone": 1, "edge": 1, "page": "app" },
-      "strong": { "material-design": "Tracking, forms and status lists in proven patterns", "linear-style": "Precise, modern look for logistics software" },
-      "works": ["dark-mode", "bento-grid"],
-      "avoid": { "glassmorphism": "Operational screens need solid contrast", "neumorphism": "Unclear controls slow operations", "neubrutalism": "Too playful for operations" } }
+      "works": [
+        "glassmorphism",
+        "liquid-glass",
+        "neumorphism",
+        "bento-grid",
+        "gradients-flat-2",
+        "dark-mode"
+      ],
+      "avoid": {
+        "material-design": "Clinical app look, not restorative",
+        "brutalism": "Harsh where calm is the promise",
+        "neubrutalism": "Loud where quiet sells",
+        "linear-style": "Tech-cold, not restorative"
+      }
+    },
+    {
+      "id": "dashboards",
+      "name": "Dashboards & internal tools",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "page": "app"
+      },
+      "strong": {
+        "material-design": "Complete component system for dense, data-heavy UIs",
+        "dark-mode": "Long sessions, charts and tables on calm dark surfaces"
+      },
+      "works": [
+        "linear-style",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Data on glass dissolves",
+        "liquid-glass": "Transparency fights tables and charts",
+        "neumorphism": "Unclear controls slow daily work",
+        "brutalism": "Daily tools need conventions"
+      }
+    },
+    {
+      "id": "travel-hospitality",
+      "name": "Travel, hotels & hospitality",
+      "defaults": {
+        "energy": 3,
+        "tone": 3,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "bento-grid": "Rooms, amenities, location and reviews as photo tiles"
+      },
+      "works": [
+        "liquid-glass",
+        "glassmorphism",
+        "material-design",
+        "gradients-flat-2",
+        "dark-mode"
+      ],
+      "avoid": {
+        "brutalism": "Guests book on trust and comfort",
+        "neumorphism": "Greys out the photography that sells the stay"
+      }
+    },
+    {
+      "id": "news-publishing",
+      "name": "News, magazines & publishing",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 2,
+        "page": "content"
+      },
+      "strong": {
+        "dark-mode": "Readers expect a comfortable night-reading option"
+      },
+      "works": [
+        "material-design",
+        "brutalism",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Long-form text on glass is tiring",
+        "liquid-glass": "Transparency fights reading",
+        "neumorphism": "Low contrast for text-first pages",
+        "gradients-flat-2": "Reads like a startup, not a publication"
+      }
+    },
+    {
+      "id": "government",
+      "name": "Government & public services",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "page": "content"
+      },
+      "strong": {
+        "material-design": "Conventional, accessible components everyone already knows"
+      },
+      "works": [
+        "dark-mode",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Accessibility is a legal duty here",
+        "liquid-glass": "Accessibility is a legal duty here",
+        "neumorphism": "Fails contrast rules public sites must meet",
+        "brutalism": "Citizens need clarity, not provocation",
+        "neubrutalism": "Too playful for official services"
+      }
+    },
+    {
+      "id": "research-science",
+      "name": "Research, science & universities",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 2,
+        "page": "content"
+      },
+      "strong": {
+        "material-design": "Handles papers, data and dense navigation clearly"
+      },
+      "works": [
+        "dark-mode",
+        "linear-style",
+        "brutalism",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Decoration over dense information",
+        "neumorphism": "Low contrast for reading-heavy pages"
+      }
+    },
+    {
+      "id": "logistics",
+      "name": "Logistics, transport & delivery",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "page": "app"
+      },
+      "strong": {
+        "material-design": "Tracking, forms and status lists in proven patterns",
+        "linear-style": "Precise, modern look for logistics software"
+      },
+      "works": [
+        "dark-mode",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Operational screens need solid contrast",
+        "neumorphism": "Unclear controls slow operations",
+        "neubrutalism": "Too playful for operations"
+      }
+    },
+    {
+      "id": "games-cozy",
+      "name": "Cozy & indie games",
+      "defaults": {
+        "energy": 3,
+        "tone": 5,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Hand-made, playful energy that suits indie studios",
+        "gradients-flat-2": "Warm, cheerful colour for cosy worlds"
+      },
+      "works": [
+        "glassmorphism",
+        "bento-grid",
+        "dark-mode",
+        "brutalism"
+      ],
+      "avoid": {
+        "linear-style": "Reads like enterprise software, not a game",
+        "material-design": "Utility-app look flattens the world you built"
+      }
+    },
+    {
+      "id": "trading",
+      "name": "Trading & investing platforms",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "page": "app"
+      },
+      "strong": {
+        "linear-style": "Dense, precise, dark: what active traders expect",
+        "dark-mode": "Long sessions staring at charts"
+      },
+      "works": [
+        "material-design",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Numbers on glass are hard to read fast",
+        "neubrutalism": "Too playful for people moving money",
+        "neumorphism": "Unclear controls where mistakes cost money",
+        "liquid-glass": "Transparency fights dense data"
+      }
+    },
+    {
+      "id": "fitness",
+      "name": "Gyms, fitness & sports",
+      "defaults": {
+        "energy": 5,
+        "tone": 3,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Loud, punchy and energetic like a good class",
+        "dark-mode": "Dark, high-contrast photography sells intensity"
+      },
+      "works": [
+        "brutalism",
+        "gradients-flat-2",
+        "bento-grid",
+        "linear-style"
+      ],
+      "avoid": {
+        "neumorphism": "Too soft and sleepy for training",
+        "glassmorphism": "Busy photos plus glass make schedules hard to read"
+      }
+    },
+    {
+      "id": "beauty-salon",
+      "name": "Beauty salons, barbers & spas",
+      "defaults": {
+        "energy": 2,
+        "tone": 3,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "liquid-glass": "Polished floating booking controls over portfolio photos"
+      },
+      "works": [
+        "glassmorphism",
+        "bento-grid",
+        "gradients-flat-2",
+        "neubrutalism",
+        "dark-mode"
+      ],
+      "avoid": {
+        "material-design": "Feels like a booking app, not a place to treat yourself",
+        "linear-style": "Tech-cold for a personal service"
+      }
+    },
+    {
+      "id": "pets",
+      "name": "Pets, vets & animal care",
+      "defaults": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Friendly, bright and full of character",
+        "gradients-flat-2": "Warm and cheerful, pairs with illustration"
+      },
+      "works": [
+        "material-design",
+        "bento-grid"
+      ],
+      "avoid": {
+        "linear-style": "Dark tech look feels cold for pet owners",
+        "brutalism": "Harsh where owners want reassurance"
+      }
+    },
+    {
+      "id": "photography",
+      "name": "Photographers & visual artists",
+      "defaults": {
+        "energy": 3,
+        "tone": 2,
+        "edge": 4,
+        "page": "marketing"
+      },
+      "strong": {
+        "brutalism": "Gets out of the way of the work, with confident type",
+        "liquid-glass": "Floating controls over full-bleed photography"
+      },
+      "works": [
+        "dark-mode",
+        "bento-grid",
+        "glassmorphism"
+      ],
+      "avoid": {
+        "neumorphism": "Grey surfaces mute the images",
+        "gradients-flat-2": "Loud colour competes with the photos"
+      }
+    },
+    {
+      "id": "open-source",
+      "name": "Open-source projects & developer docs",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 2,
+        "page": "content"
+      },
+      "strong": {
+        "linear-style": "The look developers trust for tools they adopt",
+        "dark-mode": "Docs read in dark editors and terminals"
+      },
+      "works": [
+        "material-design",
+        "brutalism",
+        "neubrutalism",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Code and docs on glass are tiring",
+        "liquid-glass": "Transparency fights long technical reading"
+      }
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "linear-style": "Serious, precise, technical: signals competence",
+        "dark-mode": "The expected look for security products and dashboards"
+      },
+      "works": [
+        "material-design",
+        "bento-grid",
+        "glassmorphism"
+      ],
+      "avoid": {
+        "neubrutalism": "Too playful for selling trust and protection",
+        "gradients-flat-2": "Startup-cheerful undermines seriousness",
+        "neumorphism": "Vague controls in products about precision"
+      }
+    }
   ],
   "questions": [
-    { "id": "industry", "label": "What are you building?", "type": "industry" },
-    { "id": "page", "label": "What kind of site is it?", "type": "choice", "options": ["marketing", "app", "content", "store"],
-      "labels": ["Marketing / landing", "Web app or tool", "Content: docs, articles, courses", "Online store"], "default": "marketing" },
-    { "id": "energy", "label": "How should it feel?", "type": "scale", "min": "Calm & quiet", "max": "Bold & loud", "default": 3 },
-    { "id": "tone", "label": "What tone?", "type": "scale", "min": "Serious & formal", "max": "Playful & fun", "default": 3 },
-    { "id": "edge", "label": "How daring?", "type": "scale", "min": "Safe & familiar", "max": "Edgy & memorable", "default": 2 },
-    { "id": "mode", "label": "Light or dark?", "type": "choice", "options": ["light", "dark", "either"], "default": "either" },
-    { "id": "trend", "label": "Era preference", "type": "choice", "options": ["current", "any", "retro"], "default": "any" },
-    { "id": "effects", "label": "How much visual effect can your users and their devices handle?", "type": "choice", "options": ["simple", "rich"],
-      "labels": ["Keep it simple: broad audience, older phones", "Rich effects are fine"], "default": "simple" }
+    {
+      "id": "industry",
+      "label": "What are you building?",
+      "type": "industry"
+    },
+    {
+      "id": "page",
+      "label": "What kind of site is it?",
+      "type": "choice",
+      "options": [
+        "marketing",
+        "app",
+        "content",
+        "store"
+      ],
+      "labels": [
+        "Marketing / landing",
+        "Web app or tool",
+        "Content: docs, articles, courses",
+        "Online store"
+      ],
+      "default": "marketing"
+    },
+    {
+      "id": "energy",
+      "label": "How should it feel?",
+      "type": "scale",
+      "min": "Calm & quiet",
+      "max": "Bold & loud",
+      "default": 3
+    },
+    {
+      "id": "tone",
+      "label": "What tone?",
+      "type": "scale",
+      "min": "Serious & formal",
+      "max": "Playful & fun",
+      "default": 3
+    },
+    {
+      "id": "edge",
+      "label": "How daring?",
+      "type": "scale",
+      "min": "Safe & familiar",
+      "max": "Edgy & memorable",
+      "default": 2
+    },
+    {
+      "id": "mode",
+      "label": "Light or dark?",
+      "type": "choice",
+      "options": [
+        "light",
+        "dark",
+        "either"
+      ],
+      "default": "either"
+    },
+    {
+      "id": "trend",
+      "label": "Era preference",
+      "type": "choice",
+      "options": [
+        "current",
+        "any",
+        "retro"
+      ],
+      "default": "any"
+    },
+    {
+      "id": "effects",
+      "label": "How much visual effect can your users and their devices handle?",
+      "type": "choice",
+      "options": [
+        "simple",
+        "rich"
+      ],
+      "labels": [
+        "Keep it simple: broad audience, older phones",
+        "Rich effects are fine"
+      ],
+      "default": "simple"
+    }
   ],
   "scoring": {
-    "industry": { "strong": 12, "works": 4, "neutral": 0, "avoid": -20 },
-    "page": { "2": 4, "1": 0, "0": -10 },
+    "industry": {
+      "strong": 12,
+      "works": 4,
+      "neutral": 0,
+      "avoid": -20
+    },
+    "page": {
+      "2": 4,
+      "1": 0,
+      "0": -10
+    },
     "perPointEnergy": 3,
     "perPointTone": 3,
     "perPointEdge": 2,

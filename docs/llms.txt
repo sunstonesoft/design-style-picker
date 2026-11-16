@@ -5,7 +5,7 @@
 ## Start here
 
 - [SKILL.md](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/SKILL.md): entry point and workflow
-- [picker.md](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/picker.md): how to choose a style (questions, scoring, industry fit matrix for 28 industries)
+- [picker.md](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/picker.md): how to choose a style (questions, scoring, industry fit matrix for 36 industries)
 - [timeline.md](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/timeline.md): when each style rose and fell
 - [Interactive picker](https://sunstonesoft.github.io/design-style-picker/)
 

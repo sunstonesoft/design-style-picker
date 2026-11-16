@@ -307,7 +307,7 @@ export default {
     },
     {
       "id": "fintech",
-      "name": "Fintech, banking & payments",
+      "name": "Fintech, consumer banking & payments",
       "defaults": {
         "energy": 2,
         "tone": 2,
@@ -545,7 +545,7 @@ export default {
     },
     {
       "id": "gaming",
-      "name": "Gaming, esports & entertainment",
+      "name": "Esports & competitive games",
       "defaults": {
         "energy": 4,
         "tone": 4,
@@ -921,6 +921,195 @@ export default {
         "glassmorphism": "Operational screens need solid contrast",
         "neumorphism": "Unclear controls slow operations",
         "neubrutalism": "Too playful for operations"
+      }
+    },
+    {
+      "id": "games-cozy",
+      "name": "Cozy & indie games",
+      "defaults": {
+        "energy": 3,
+        "tone": 5,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Hand-made, playful energy that suits indie studios",
+        "gradients-flat-2": "Warm, cheerful colour for cosy worlds"
+      },
+      "works": [
+        "glassmorphism",
+        "bento-grid",
+        "dark-mode",
+        "brutalism"
+      ],
+      "avoid": {
+        "linear-style": "Reads like enterprise software, not a game",
+        "material-design": "Utility-app look flattens the world you built"
+      }
+    },
+    {
+      "id": "trading",
+      "name": "Trading & investing platforms",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 1,
+        "page": "app"
+      },
+      "strong": {
+        "linear-style": "Dense, precise, dark: what active traders expect",
+        "dark-mode": "Long sessions staring at charts"
+      },
+      "works": [
+        "material-design",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Numbers on glass are hard to read fast",
+        "neubrutalism": "Too playful for people moving money",
+        "neumorphism": "Unclear controls where mistakes cost money",
+        "liquid-glass": "Transparency fights dense data"
+      }
+    },
+    {
+      "id": "fitness",
+      "name": "Gyms, fitness & sports",
+      "defaults": {
+        "energy": 5,
+        "tone": 3,
+        "edge": 3,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Loud, punchy and energetic like a good class",
+        "dark-mode": "Dark, high-contrast photography sells intensity"
+      },
+      "works": [
+        "brutalism",
+        "gradients-flat-2",
+        "bento-grid",
+        "linear-style"
+      ],
+      "avoid": {
+        "neumorphism": "Too soft and sleepy for training",
+        "glassmorphism": "Busy photos plus glass make schedules hard to read"
+      }
+    },
+    {
+      "id": "beauty-salon",
+      "name": "Beauty salons, barbers & spas",
+      "defaults": {
+        "energy": 2,
+        "tone": 3,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "liquid-glass": "Polished floating booking controls over portfolio photos"
+      },
+      "works": [
+        "glassmorphism",
+        "bento-grid",
+        "gradients-flat-2",
+        "neubrutalism",
+        "dark-mode"
+      ],
+      "avoid": {
+        "material-design": "Feels like a booking app, not a place to treat yourself",
+        "linear-style": "Tech-cold for a personal service"
+      }
+    },
+    {
+      "id": "pets",
+      "name": "Pets, vets & animal care",
+      "defaults": {
+        "energy": 4,
+        "tone": 4,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "neubrutalism": "Friendly, bright and full of character",
+        "gradients-flat-2": "Warm and cheerful, pairs with illustration"
+      },
+      "works": [
+        "material-design",
+        "bento-grid"
+      ],
+      "avoid": {
+        "linear-style": "Dark tech look feels cold for pet owners",
+        "brutalism": "Harsh where owners want reassurance"
+      }
+    },
+    {
+      "id": "photography",
+      "name": "Photographers & visual artists",
+      "defaults": {
+        "energy": 3,
+        "tone": 2,
+        "edge": 4,
+        "page": "marketing"
+      },
+      "strong": {
+        "brutalism": "Gets out of the way of the work, with confident type",
+        "liquid-glass": "Floating controls over full-bleed photography"
+      },
+      "works": [
+        "dark-mode",
+        "bento-grid",
+        "glassmorphism"
+      ],
+      "avoid": {
+        "neumorphism": "Grey surfaces mute the images",
+        "gradients-flat-2": "Loud colour competes with the photos"
+      }
+    },
+    {
+      "id": "open-source",
+      "name": "Open-source projects & developer docs",
+      "defaults": {
+        "energy": 2,
+        "tone": 2,
+        "edge": 2,
+        "page": "content"
+      },
+      "strong": {
+        "linear-style": "The look developers trust for tools they adopt",
+        "dark-mode": "Docs read in dark editors and terminals"
+      },
+      "works": [
+        "material-design",
+        "brutalism",
+        "neubrutalism",
+        "bento-grid"
+      ],
+      "avoid": {
+        "glassmorphism": "Code and docs on glass are tiring",
+        "liquid-glass": "Transparency fights long technical reading"
+      }
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "defaults": {
+        "energy": 2,
+        "tone": 1,
+        "edge": 2,
+        "page": "marketing"
+      },
+      "strong": {
+        "linear-style": "Serious, precise, technical: signals competence",
+        "dark-mode": "The expected look for security products and dashboards"
+      },
+      "works": [
+        "material-design",
+        "bento-grid",
+        "glassmorphism"
+      ],
+      "avoid": {
+        "neubrutalism": "Too playful for selling trust and protection",
+        "gradients-flat-2": "Startup-cheerful undermines seriousness",
+        "neumorphism": "Vague controls in products about precision"
       }
     }
   ],
