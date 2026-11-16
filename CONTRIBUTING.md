@@ -19,6 +19,8 @@ npm run build   # after editing data/picker.json or an example
 npm run check   # must pass before a PR: guides, generated files, scenarios
 ```
 
+Demos are also checked with axe-core in CI (`a11y` workflow). To run it locally: `npm i --no-save playwright axe-core && npx playwright install chromium && node scripts/a11y.mjs`.
+
 ## The picker data
 
 `data/picker.json` is the single source of truth:

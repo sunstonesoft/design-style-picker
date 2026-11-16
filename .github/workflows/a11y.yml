@@ -1,0 +1,21 @@
+name: a11y
+on:
+  push:
+    branches: [main]
+    paths: ["skills/design-style-picker/examples/**", "scripts/a11y.mjs"]
+  pull_request:
+    paths: ["skills/design-style-picker/examples/**", "scripts/a11y.mjs"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  axe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm i --no-save playwright@1.56.1 axe-core@4.10.2
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/a11y.mjs

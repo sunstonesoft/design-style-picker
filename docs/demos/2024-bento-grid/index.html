@@ -22,7 +22,7 @@
 [data-base="light"] {
   color-scheme: light;
   --bg: #fbfbfd; --tile: #f2f2f5; --tile-2: #ffffff; --ink: #111114; --muted: #5d5d66; --line: rgb(0 0 0 / .06);
-  --accent: #b5561c; --accent-soft: #ffe2cf; --cool: #dfe7ff; --mint: #d9f4e6; --dark-tile: #111114; --on-dark: #f5f5f7;
+  --accent: #a14a14; --accent-soft: #ffe2cf; --cool: #dfe7ff; --mint: #d9f4e6; --dark-tile: #111114; --on-dark: #f5f5f7;
 }
 /* base style B: dark SaaS (Linear-ish) */
 [data-base="dark"] {
@@ -168,8 +168,8 @@ footer .legal { grid-column: 1 / -1; font-size: 13px; }
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
       <div class="switch" role="group" aria-label="Base style under the bento layout">
-        <button type="button" data-base="light" aria-pressed="true">Clean light</button>
-        <button type="button" data-base="dark" aria-pressed="false">Dark SaaS</button>
+        <button type="button" data-set="light" aria-pressed="true">Clean light</button>
+        <button type="button" data-set="dark" aria-pressed="false">Dark SaaS</button>
       </div>
       <p class="base-note">Same bento layout, two base styles. Bento is a layout you add to a style.</p>
       <h1 id="hero-title" style="margin-top:28px">Coffee roasted on Tuesday, in your cup by Friday.</h1>
@@ -289,8 +289,8 @@ footer .legal { grid-column: 1 / -1; font-size: 13px; }
   const d = document.getElementById("roast");
   document.getElementById("open-roast").addEventListener("click", () => d.showModal());
   const root = document.documentElement;
-  const set = (b) => { root.dataset.base = b; document.querySelectorAll(".switch button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.base === b))); };
-  document.querySelectorAll(".switch button").forEach((b) => b.addEventListener("click", () => set(b.dataset.base)));
+  const set = (b) => { root.dataset.base = b; document.querySelectorAll(".switch button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.set === b))); };
+  document.querySelectorAll(".switch button").forEach((b) => b.addEventListener("click", () => set(b.dataset.set)));
   const hash = location.hash.slice(1); if (hash === "dark" || hash === "light") set(hash);
 </script>
 </body>

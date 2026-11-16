@@ -9,6 +9,7 @@
 [**Try the picker →**](https://sunstonesoft.github.io/design-style-picker/) &nbsp;·&nbsp; [One business, ten styles](https://sunstonesoft.github.io/design-style-picker/gallery/) &nbsp;·&nbsp; [Install](#install) &nbsp;·&nbsp; [The styles](#the-styles) &nbsp;·&nbsp; [How it picks](#how-it-picks) &nbsp;·&nbsp; [Contribute](#contributing)
 
 [![check](https://github.com/sunstonesoft/design-style-picker/actions/workflows/check.yml/badge.svg)](https://github.com/sunstonesoft/design-style-picker/actions/workflows/check.yml)
+[![a11y](https://github.com/sunstonesoft/design-style-picker/actions/workflows/a11y.yml/badge.svg)](https://github.com/sunstonesoft/design-style-picker/actions/workflows/a11y.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757)](#install)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
