@@ -48,7 +48,7 @@
       "tagline": "Rounded tiles, one idea each, Apple-keynote tidy",
       "traits": { "energy": 3, "tone": 3, "edge": 2, "freshness": 5, "density": 2, "a11yRisk": 1, "mode": "both",
                   "pages": { "marketing": 2, "app": 1, "content": 0, "store": 2 } } },
-    { "id": "liquid-glass", "kind": "style", "year": 2025, "name": "Liquid Glass", "file": "eras/2025-liquid-glass.md",
+    { "id": "liquid-glass", "kind": "style", "demo": true, "year": 2025, "name": "Liquid Glass", "file": "eras/2025-liquid-glass.md",
       "tagline": "Refracting glass controls over full-bleed content",
       "traits": { "energy": 3, "tone": 2, "edge": 3, "freshness": 5, "density": 1, "a11yRisk": 3, "mode": "both",
                   "pages": { "marketing": 2, "app": 1, "content": 0, "store": 1 } } }

@@ -227,6 +227,7 @@ export default {
     {
       "id": "liquid-glass",
       "kind": "style",
+      "demo": true,
       "year": 2025,
       "name": "Liquid Glass",
       "file": "eras/2025-liquid-glass.md",
