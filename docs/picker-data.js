@@ -131,6 +131,7 @@ export default {
     {
       "id": "glassmorphism",
       "kind": "style",
+      "demo": true,
       "year": 2021,
       "name": "Glassmorphism",
       "file": "eras/2021-glassmorphism.md",
@@ -154,6 +155,7 @@ export default {
     {
       "id": "neubrutalism",
       "kind": "style",
+      "demo": true,
       "year": 2022,
       "name": "Neubrutalism",
       "file": "eras/2022-neubrutalism.md",

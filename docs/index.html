@@ -340,7 +340,7 @@ function render() {
         <div class="actions">
           <a class="btn ${n === 0 ? "primary" : ""}" href="${guideUrl(r.style)}">Build guide →</a>
           ${n === 0 ? `<button class="btn" type="button" id="copy-prompt">Copy prompt for your AI agent</button>` : ""}
-          ${r.id === "glassmorphism" ? `<a class="btn" href="demos/2021-glassmorphism/">Live demo</a>` : ""}
+          ${r.style.demo ? `<a class="btn" href="demos/${r.style.year}-${r.id}/">Live demo</a>` : ""}
         </div>
       </div>
     </article>`;
