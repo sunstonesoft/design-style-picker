@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kettlefern · Neumorphism demo</title>
+<meta name="description" content="The shared Kettlefern Coffee Roasters brief built in 2020 Neumorphism (basic-level demo), a reference for design-style-picker.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* shared structure (all basic-level demos) */
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+.wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.nav ul { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.nav ul a { display: block; padding: 8px 12px; text-decoration: none; }
+@media (max-width: 820px) { .nav ul { display: none; } }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; cursor: pointer; text-decoration: none; white-space: nowrap; font: inherit; }
+.hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+@media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } }
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 860px) { .grid3 { grid-template-columns: 1fr; } }
+.card { display: flex; flex-direction: column; gap: 10px; }
+.card p { margin: 0; }
+.row-end { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.plan ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.quote blockquote { margin: 0; }
+.news { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+@media (max-width: 860px) { .news { grid-template-columns: 1fr; } }
+.news form { display: grid; gap: 8px; }
+.field { display: flex; gap: 10px; flex-wrap: wrap; }
+.field input { flex: 1 1 220px; min-height: 46px; font: inherit; }
+dialog { width: min(480px, calc(100% - 32px)); }
+footer .wrap { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 24px; }
+@media (max-width: 720px) { footer .wrap { grid-template-columns: 1fr; } }
+footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+footer .legal { grid-column: 1 / -1; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+/* ── Neumorphism (2020) ── */
+
+:root { --s:#e0e5ec; --dark:rgb(163 177 198/.6); --light:rgb(255 255 255/.5); --text:#2e3149; --muted:#4f5470; --accent:#8a4b16;
+  --raise:9px 9px 16px var(--dark),-9px -9px 16px var(--light); --raise-sm:4px 4px 8px var(--dark),-4px -4px 8px var(--light);
+  --press:inset 6px 6px 12px var(--dark),inset -6px -6px 12px var(--light); }
+body { background:var(--s); color:var(--text); font:400 16px/1.6 Poppins,system-ui,sans-serif; }
+.logo { font-weight:600; font-size:19px; text-decoration:none; } .nav ul a { color:var(--muted); text-decoration:none; border-radius:12px; } .nav ul a:hover { box-shadow:var(--raise-sm); }
+/* accessibility fix from the era file: every control has a visible 1px edge, not just shadows */
+.btn { background:var(--s); color:var(--text); border:1px solid rgb(0 0 0/.14); border-radius:14px; box-shadow:var(--raise-sm); font:600 15px Poppins; }
+.btn:active { box-shadow:var(--press); } .btn.primary { color:#fff; background:var(--accent); border-color:var(--accent); }
+.hero { padding:72px 0; } .hero h1 { font:600 clamp(34px,5vw,54px)/1.15 Poppins; margin:0 0 16px; } .sub { color:var(--muted); font-size:18px; margin:0 0 28px; }
+.visual { display:grid; place-items:center; gap:28px; }
+.knob { width:220px; height:220px; border-radius:50%; box-shadow:var(--raise); display:grid; place-items:center; }
+.dial { width:150px; height:150px; border-radius:50%; box-shadow:var(--press); display:grid; place-content:center; text-align:center; } .dial span { color:var(--muted); font-size:13px; } .dial b { font-size:20px; }
+.toggles { display:flex; gap:20px; } .tg { width:64px; height:32px; border-radius:999px; box-shadow:var(--press); position:relative; border:1px solid rgb(0 0 0/.1); }
+.tg::after { content:""; position:absolute; top:4px; left:4px; width:22px; height:22px; border-radius:50%; background:var(--s); box-shadow:var(--raise-sm); }
+.tg.on::after { left:auto; right:4px; background:var(--accent); }
+.sec { padding:64px 0; } h2 { font:600 32px Poppins; margin:0 0 32px; }
+.card { border-radius:20px; box-shadow:var(--raise); padding:26px; } .card h3 { font-size:19px; margin:0; } .card p { color:var(--muted); }
+.art { height:120px; border-radius:16px; box-shadow:var(--press); } .origin, .price small, .amt small, figcaption, .news small { color:var(--muted); font-size:14px; }
+.price { font-weight:600; } .amt { font:600 38px Poppins; } .plan li::before { content:"● "; color:var(--accent); font-size:10px; vertical-align:2px; }
+.plan.featured { border:2px solid var(--accent); } .badge { align-self:flex-start; color:var(--accent); font-weight:600; font-size:13px; }
+.quote { margin:0; padding:32px; border-radius:24px; box-shadow:var(--press); } .quote blockquote { font:500 24px/1.45 Poppins; }
+.field input { background:var(--s); color:var(--text); border:1px solid rgb(0 0 0/.18); border-radius:12px; box-shadow:var(--press); padding:0 16px; } label { font-weight:600; font-size:14px; }
+dialog { background:var(--s); color:var(--text); border:1px solid rgb(0 0 0/.12); border-radius:24px; box-shadow:var(--raise); padding:28px; } dialog p { color:var(--muted); }
+footer { padding:40px 0; color:var(--muted); font-size:14px; } footer h4 { color:var(--text); margin:0 0 8px; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+@media (prefers-contrast: more) { .btn, .card, .field input { box-shadow:none; border:2px solid var(--text); } }
+
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#">Kettlefern</a>
+  <nav aria-label="Main"><ul><li><a href="#coffee">Coffee</a></li><li><a href="#subscriptions">Subscriptions</a></li><li><a href="#cafe">Café</a></li><li><a href="#about">About</a></li></ul></nav>
+  <a class="btn primary" href="#coffee">Shop beans</a>
+</div></header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title"><div class="wrap">
+    <div>
+      <h1 id="hero-title">Coffee roasted on Tuesday, in your cup by Friday.</h1>
+      <p class="sub">Small-batch beans from farms we know by name, roasted twice a week and shipped the same day.</p>
+      <div class="ctas"><a class="btn primary" href="#coffee">Shop beans</a><button class="btn secondary" type="button" id="open-roast">How we roast</button></div>
+    </div>
+    <div class="visual" aria-hidden="true"><div class="knob"><div class="dial"><span>Roast</span><b>Medium</b></div></div><div class="toggles"><span class="tg on" role="img" aria-label="Filter on"></span><span class="tg" role="img" aria-label="Espresso off"></span></div></div>
+  </div></section>
+
+  <section id="about" class="sec" aria-labelledby="f-title"><div class="wrap">
+    <h2 id="f-title">Fresh, traced, and helped.</h2>
+    <div class="grid3">
+      <article class="card feature"><h3>Roasted twice a week.</h3><p>Every bag ships within 24 hours of roasting, so it peaks in your kitchen, not in a warehouse.</p></article>
+      <article class="card feature"><h3>Traceable farms.</h3><p>Each bag names the farm, the altitude and the harvest. We pay well above Fairtrade minimums.</p></article>
+      <article class="card feature"><h3>Brew support.</h3><p>Stuck on a recipe? Send us your setup and a roaster replies with a recipe that fits.</p></article>
+    </div>
+  </div></section>
+
+  <section id="coffee" class="sec alt" aria-labelledby="c-title"><div class="wrap">
+    <h2 id="c-title">Pick your bag.</h2>
+    <div class="grid3">
+      <article class="card product"><div class="art a1" aria-hidden="true"></div><span class="origin">Huila, Colombia</span><h3>Morning Fern</h3><p>Red apple, caramel, cocoa</p><div class="row-end"><span class="price">$18 <small>/ 340 g</small></span><button class="btn secondary" type="button">Add to cart</button></div></article>
+      <article class="card product"><div class="art a2" aria-hidden="true"></div><span class="origin">Sidama, Ethiopia</span><h3>Ash &amp; Ember</h3><p>Blueberry, jasmine, black tea</p><div class="row-end"><span class="price">$21 <small>/ 340 g</small></span><button class="btn secondary" type="button">Add to cart</button></div></article>
+      <article class="card product"><div class="art a3" aria-hidden="true"></div><span class="origin">Cajamarca, Peru (sugarcane process)</span><h3>Low Tide Decaf</h3><p>Brown sugar, almond, orange</p><div class="row-end"><span class="price">$19 <small>/ 340 g</small></span><button class="btn secondary" type="button">Add to cart</button></div></article>
+    </div>
+  </div></section>
+
+  <section id="subscriptions" class="sec" aria-labelledby="p-title"><div class="wrap">
+    <h2 id="p-title">Never run out.</h2>
+    <div class="grid3 plans">
+      <article class="card plan"><h3>Sampler</h3><div class="amt">$16 <small>/ month</small></div><ul><li>One 250 g bag</li><li>Rotating single origin</li></ul><a class="btn secondary" href="#">Choose Sampler</a></article>
+      <article class="card plan featured"><span class="badge">Most popular</span><h3>Regular</h3><div class="amt">$32 <small>/ month</small></div><ul><li>Two 340 g bags</li><li>Roaster's choice</li><li>Free shipping</li></ul><a class="btn primary" href="#">Choose Regular</a></article>
+      <article class="card plan"><h3>Office</h3><div class="amt">$85 <small>/ month</small></div><ul><li>1 kg bags × 3</li><li>Brew guide for your machine</li><li>Free shipping</li></ul><a class="btn secondary" href="#">Choose Office</a></article>
+    </div>
+  </div></section>
+
+  <section class="sec" aria-label="Testimonial"><div class="wrap">
+    <figure class="quote"><blockquote>“The only subscription I've never paused. The Ethiopian tastes like blueberry jam, and it's actually fresh.”</blockquote><figcaption>Priya N., home espresso nerd</figcaption></figure>
+  </div></section>
+
+  <section id="cafe" class="sec" aria-labelledby="n-title"><div class="wrap">
+    <div class="card news">
+      <h2 id="n-title">Hear when it's hot.</h2>
+      <form onsubmit="event.preventDefault(); this.querySelector('small').textContent = 'Thanks! (Demo only: nothing was sent.)';">
+        <label for="email">Email address</label>
+        <div class="field"><input id="email" type="email" placeholder="you@example.com" autocomplete="email" required><button class="btn primary" type="submit">Get roast-day emails</button></div>
+        <small>One email on roast days. No spam, unsubscribe anytime.</small>
+      </form>
+    </div>
+  </div></section>
+</main>
+
+<dialog id="roast" aria-labelledby="roast-title">
+  <h3 id="roast-title">How we roast</h3>
+  <p>We roast in 12 kg batches on Tuesdays and Thursdays, cup every batch the next morning, and ship the same day. Light roasts for filter, medium for espresso, nothing burnt.</p>
+  <form method="dialog"><button class="btn primary">Got it</button></form>
+</dialog>
+
+<footer><div class="wrap">
+  <div><a class="logo" href="#">Kettlefern</a><p>Small-batch coffee, roasted twice a week.</p></div>
+  <div><h4>Café hours</h4><ul><li>Mon–Fri 7:00–16:00</li><li>Sat 8:00–15:00</li><li>Sun closed</li></ul></div>
+  <div><h4>Links</h4><ul><li><a href="#coffee">Coffee</a></li><li><a href="#subscriptions">Subscriptions</a></li><li><a href="#about">About</a></li></ul></div>
+  <p class="legal">© 2026 Kettlefern Coffee Roasters. A fictional business for the design-style-picker demos. Basic-level demo: see the era file for the full rules.</p>
+</div></footer>
+
+<script>
+  const d = document.getElementById("roast");
+  document.getElementById("open-roast").addEventListener("click", () => d.showModal());
+</script>
+</body>
+</html>

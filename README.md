@@ -6,7 +6,7 @@
 
 10 proven web design styles · 28 industries · sourced rules, design tokens and checklists for Claude Code, Cursor, Codex and any coding agent.
 
-[**Try the picker →**](https://sunstonesoft.github.io/design-style-picker/) &nbsp;·&nbsp; [Install](#install) &nbsp;·&nbsp; [The styles](#the-styles) &nbsp;·&nbsp; [How it picks](#how-it-picks) &nbsp;·&nbsp; [Contribute](#contributing)
+[**Try the picker →**](https://sunstonesoft.github.io/design-style-picker/) &nbsp;·&nbsp; [One business, ten styles](https://sunstonesoft.github.io/design-style-picker/gallery/) &nbsp;·&nbsp; [Install](#install) &nbsp;·&nbsp; [The styles](#the-styles) &nbsp;·&nbsp; [How it picks](#how-it-picks) &nbsp;·&nbsp; [Contribute](#contributing)
 
 [![check](https://github.com/sunstonesoft/design-style-picker/actions/workflows/check.yml/badge.svg)](https://github.com/sunstonesoft/design-style-picker/actions/workflows/check.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -76,7 +76,7 @@ One defining style per year of the last decade. Bento Grid and Dark Mode are **a
 | 2024 | **Bento Grid** *(layout add-on)* ⭐ *deep guide + [live demo](https://sunstonesoft.github.io/design-style-picker/demos/2024-bento-grid/)* | tidy, scannable, Apple keynote | feature overviews, stores, link-in-bio | [guide](skills/design-style-picker/eras/2024-bento-grid.md) |
 | 2025 | **Liquid Glass** ⭐ *deep guide + [live demo](https://sunstonesoft.github.io/design-style-picker/demos/2025-liquid-glass/)* | fluid, physical, Apple | media, hardware, photo-led brands | [guide](skills/design-style-picker/eras/2025-liquid-glass.md) |
 
-The [timeline](skills/design-style-picker/timeline.md) covers when each rose and fell, what it reacted against, and the runner-ups each year.
+See the **[gallery](https://sunstonesoft.github.io/design-style-picker/gallery/)**: one fictional coffee roaster built in all ten styles, with a side-by-side compare view. The [timeline](skills/design-style-picker/timeline.md) covers when each rose and fell, what it reacted against, and the runner-ups each year.
 
 ## How it picks
 

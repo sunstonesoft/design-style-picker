@@ -16,6 +16,7 @@ export default {
     {
       "id": "material-design",
       "kind": "style",
+      "demo": true,
       "year": 2016,
       "name": "Material Design",
       "file": "eras/2016-material-design.md",
@@ -39,6 +40,7 @@ export default {
     {
       "id": "brutalism",
       "kind": "style",
+      "demo": true,
       "year": 2017,
       "name": "Web Brutalism",
       "file": "eras/2017-brutalism.md",
@@ -62,6 +64,7 @@ export default {
     {
       "id": "gradients-flat-2",
       "kind": "style",
+      "demo": true,
       "year": 2018,
       "name": "Vibrant Gradients & Flat 2.0",
       "file": "eras/2018-gradients-flat-2.md",
@@ -85,6 +88,7 @@ export default {
     {
       "id": "dark-mode",
       "kind": "theme",
+      "demo": true,
       "year": 2019,
       "name": "Dark Mode",
       "file": "eras/2019-dark-mode.md",
@@ -108,6 +112,7 @@ export default {
     {
       "id": "neumorphism",
       "kind": "style",
+      "demo": true,
       "year": 2020,
       "name": "Neumorphism",
       "file": "eras/2020-neumorphism.md",
