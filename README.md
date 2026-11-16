@@ -114,12 +114,13 @@ Every style guide has the same sections: **Snapshot · Origin & timeline · Text
 
 ## Roadmap
 
-- [ ] Deep guides for the other nine styles, each with a live demo
-- [ ] Missing directions: classic editorial / serif, Swiss minimalism, warm organic & illustrated, maximalist
-- [ ] The same fictional brief rendered in every style, side by side
-- [ ] More industries (split gaming into cozy vs competitive; consumer banking vs trading)
-- [ ] Per-style and per-industry pages on the website
-- [ ] JSON Schema for `data/picker.json`
+The full plan is in **[ROADMAP.md](ROADMAP.md)**. Highlights:
+
+- **v0.2 · Depth:** deep guides and live demos for Neubrutalism, Linear Style, Bento and Liquid Glass; one brief rendered in every style; a "was this right?" button
+- **v0.3 · Coverage:** editorial/serif, Swiss, warm organic, claymorphism, Y2K and more; sub-industries; per-style and per-industry pages
+- **v0.4 · Tooling:** token packages (CSS, Tailwind, shadcn, DTCG), a CLI, an MCP server
+- **v0.5 · Trust:** a designer-reviewed calibration set, agent build evals, an automated style audit
+- **v1.0 and beyond:** a style detector, data-backed design history from HTTP Archive, Figma and VS Code integrations
 
 ## Contributing
 
