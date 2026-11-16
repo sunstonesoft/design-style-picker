@@ -2,7 +2,7 @@
 
 Where Design Style Picker goes from v0.1. The goal stays the same: **anyone, with or without design training, picks the right style for their business, and their AI agent builds it well.**
 
-Everything here is open for discussion. Comment on the linked milestone or open an issue. Sizes are rough: **S** about a day, **M** a few days, **L** one to two weeks, **XL** a multi-week project.
+Everything here is open for discussion. Comment on the linked milestone or open an issue. ✅ = shipped, ◐ = partly shipped. Sizes are rough: **S** about a day, **M** a few days, **L** one to two weeks, **XL** a multi-week project.
 
 ---
 
@@ -37,10 +37,10 @@ Today only 2021 Glassmorphism is deep. The rest give an agent enough to start, n
 
 | # | Item | Size | Phase |
 |---|---|---|---|
-| 1.1 | **Deep guides, in priority order** (most picked and most requested first): Neubrutalism → Linear Style → Bento Grid → Liquid Glass → Dark Mode → Material Design → Gradients & Flat 2.0 → Brutalism → Neumorphism | L each | v0.2–v0.4 |
-| 1.2 | **A live demo per style**, at the same bar as the glassmorphism demo: nav, hero, cards, form, pricing, modal, plus mobile | M each | with 1.1 |
-| 1.3 | **Same-brief gallery:** one fictional business (e.g. a coffee roaster) built in all ten styles, side by side, so people see the difference instantly. Also great launch imagery | L | v0.2 |
-| 1.4 | **"Recipe in numbers" tables** for every style, saying where each value comes from (as glassmorphism has) | S each | with 1.1 |
+| 1.1 ◐ | **Deep guides, in priority order** (Neubrutalism, Linear, Bento, Liquid Glass done) (most picked and most requested first): Neubrutalism → Linear Style → Bento Grid → Liquid Glass → Dark Mode → Material Design → Gradients & Flat 2.0 → Brutalism → Neumorphism | L each | v0.2–v0.4 |
+| 1.2 ✅ | **A live demo per style**, at the same bar as the glassmorphism demo: nav, hero, cards, form, pricing, modal, plus mobile | M each | with 1.1 |
+| 1.3 ✅ | **Same-brief gallery:** one fictional business (e.g. a coffee roaster) built in all ten styles, side by side, so people see the difference instantly. Also great launch imagery | L | v0.2 |
+| 1.4 ✅ | **"Recipe in numbers" tables** for every style, saying where each value comes from (as glassmorphism has) | S each | with 1.1 |
 | 1.5 | **Page-type recipes** per style: marketing, app shell, docs/content, store. A style's rules for a dashboard differ from its landing page | M each | v0.3 |
 | 1.6 | **Dark *and* light variants** documented for every base style, since Dark Mode is now an add-on | S each | v0.3 |
 | 1.7 | **Motion specs** per style: durations, easing, what moves and what never moves, reduced-motion fallbacks | S each | v0.3 |
@@ -81,15 +81,15 @@ The picker already admits gaps: luxury and wellness have no strong base style. C
 | 2.1 | **Separate "era" from "catalogue".** Keep one *defining* style per year for the history view, but allow any number of catalogue styles per year. The validator's one-per-year rule must go (flagged in the Sol review) | M |
 | 2.2 | **More `kind`s:** `style`, `layout` (bento, split-screen, single-column story), `theme` (dark, high-contrast), `effect` (glass, grain, glow), so picks compose cleanly: *base + layout + theme + accent effect* | M |
 | 2.3 | **Trait ranges instead of points.** Neubrutalism can be "energy 4–5", Bento "2–4", so variants don't get unfairly penalised | M |
-| 2.4 | **JSON Schema** for `picker.json` and the era frontmatter, validated in CI and usable by editors | S |
+| 2.4 ✅ | **JSON Schema** for `picker.json` and the era frontmatter, validated in CI and usable by editors | S |
 | 2.5 | **Style variants** (e.g. Brutalism: *raw-honest* vs *expressive*; Material: *M1 period* vs *modernised*) with separate traits | M |
 
 ### 2c. Industries
 
 | # | Item | Size |
 |---|---|---|
-| 2.6 | **Split broad industries:** gaming → cozy/indie vs competitive/esports; fintech → consumer banking vs trading vs infrastructure; healthcare → clinic vs medtech vs pharma; e-commerce → fashion vs grocery vs marketplace | M |
-| 2.7 | **Add industries:** architecture & interiors, automotive, beauty salons, sports & fitness, pets, legal tech, insurance, HR & recruiting, agriculture, energy & climate, religious organisations, weddings, photography, construction, cybersecurity, AI agents & LLM tools, open-source projects, personal portfolios for developers | M |
+| 2.6 ✅ | **Split broad industries:** gaming → cozy/indie vs competitive/esports; fintech → consumer banking vs trading vs infrastructure; healthcare → clinic vs medtech vs pharma; e-commerce → fashion vs grocery vs marketplace | M |
+| 2.7 ◐ | **Add industries:** (fitness, beauty salons, pets, photography, open source, cybersecurity done) architecture & interiors, automotive, beauty salons, sports & fitness, pets, legal tech, insurance, HR & recruiting, agriculture, energy & climate, religious organisations, weddings, photography, construction, cybersecurity, AI agents & LLM tools, open-source projects, personal portfolios for developers | M |
 | 2.8 | **Regional and cultural notes:** colour meaning, density preferences (e.g. denser layouts common in East Asian markets), RTL support per style | L |
 | 2.9 | **Audience modifiers:** seniors, children, B2B buyers, enterprise procurement, developers. These shift weights rather than acting as industries | M |
 
@@ -99,16 +99,16 @@ The picker already admits gaps: luxury and wellness have no strong base style. C
 
 | # | Item | Size | Phase |
 |---|---|---|---|
-| 3.1 | **"Was this right?" feedback** on the website, opening a pre-filled GitHub issue with the brief and result. No tracking, no backend | S | v0.2 |
+| 3.1 ✅ | **"Was this right?" feedback** on the website, opening a pre-filled GitHub issue with the brief and result. No tracking, no backend | S | v0.2 |
 | 3.2 | **Hard constraints vs preferences.** "Must be light", "must work on old Android phones" as filters, not weights | M | v0.3 |
 | 3.3 | **"Which matters most?"** Let users mark one answer as most important and weight it double | S | v0.3 |
 | 3.4 | **Brand-aware picking.** Input existing brand colours, fonts and logo style, then flag styles that clash and adapt tokens to the brand | L | v0.4 |
-| 3.5 | **Explain "why not X"** for any style, not just the top three | S | v0.3 |
+| 3.5 ✅ | **Explain "why not X"** for any style, not just the top three | S | v0.3 |
 | 3.6 | **Confidence and abstain.** Show "clear winner", "close call" or "no great fit, here's the nearest", with the reasons | M | v0.5 |
 | 3.7 | **Composition output:** a full recipe (base style + layout + theme + effect + type pairing + palette starter), not just a name | M | v0.4 |
 | 3.8 | **Conversational mode for agents:** a short question script that adapts (skips what's known from the repo: existing CSS, `tailwind.config`, brand assets) | M | v0.3 |
 | 3.9 | **Codebase sniffing:** detect the current style of an existing project and recommend *evolution*, not replacement | L | v0.5 |
-| 3.10 | **Versioned scoring.** Encode the model version in shared links so old links keep their result after weights change | S | v0.3 |
+| 3.10 ✅ | **Versioned scoring.** Encode the model version in shared links so old links keep their result after weights change | S | v0.3 |
 | 3.11 | **Learned weights:** fit weights to the calibration set (5.1) instead of hand-tuning, while keeping them readable | L | v1.0 |
 
 ---
@@ -137,9 +137,9 @@ The picker already admits gaps: luxury and wellness have no strong base style. C
 | 5.3 | **Source audit:** every era file's dates and values traced to a primary source or an archived snapshot (Wayback links). Fix every "unverified" note | L | v0.3 |
 | 5.4 | **Agent build evals:** the same brief and style handed to several agents (Claude, GPT, Gemini), with output scored by the automated audit (4.5) and human review. Publish a results table per style | XL | v0.5 |
 | 5.5 | **Skill evals with `claude plugin eval`:** does the skill trigger on the right prompts, and does it ask at most three questions | M | v0.4 |
-| 5.6 | **Accessibility CI for demos:** axe-core on every demo page, failing on violations. Contrast checks in light, dark, reduced-transparency and forced-colours modes | M | v0.3 |
+| 5.6 ✅ | **Accessibility CI for demos:** axe-core on every demo page, failing on violations. Contrast checks in light, dark, reduced-transparency and forced-colours modes | M | v0.3 |
 | 5.7 | **Visual regression for demos and site** (Playwright screenshots on the rig) | M | v0.3 |
-| 5.8 | **Link checker** in CI for all sources (archived fallbacks for dead links) | S | v0.2 |
+| 5.8 ✅ | **Link checker** in CI for all sources (archived fallbacks for dead links) | S | v0.2 |
 | 5.9 | **Peer review rule:** changes to industry ratings need a reason plus a scenario; changes to weights need a calibration run | S | v0.3 |
 
 ---
