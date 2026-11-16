@@ -179,6 +179,7 @@ export default {
     {
       "id": "linear-style",
       "kind": "style",
+      "demo": true,
       "year": 2023,
       "name": "Linear Style (dark SaaS)",
       "file": "eras/2023-linear-style.md",

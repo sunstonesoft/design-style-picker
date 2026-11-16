@@ -40,7 +40,7 @@
       "tagline": "Thick outlines, hard shadows, sticker-sheet fun",
       "traits": { "energy": 5, "tone": 5, "edge": 4, "freshness": 3, "density": 2, "a11yRisk": 2, "mode": "light",
                   "pages": { "marketing": 2, "app": 1, "content": 1, "store": 2 } } },
-    { "id": "linear-style", "kind": "style", "year": 2023, "name": "Linear Style (dark SaaS)", "file": "eras/2023-linear-style.md",
+    { "id": "linear-style", "kind": "style", "demo": true, "year": 2023, "name": "Linear Style (dark SaaS)", "file": "eras/2023-linear-style.md",
       "tagline": "Near-black, one glow, hairlines, product-first",
       "traits": { "energy": 2, "tone": 1, "edge": 2, "freshness": 4, "density": 2, "a11yRisk": 2, "mode": "dark",
                   "pages": { "marketing": 2, "app": 2, "content": 1, "store": 0 } } },

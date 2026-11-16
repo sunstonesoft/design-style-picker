@@ -72,7 +72,7 @@ One defining style per year of the last decade. Bento Grid and Dark Mode are **a
 | 2020 | **Neumorphism** | soft, tactile, moulded | device showcases (sparingly) | [guide](skills/design-style-picker/eras/2020-neumorphism.md) |
 | 2021 | **Glassmorphism** ⭐ *deep guide + [live demo](https://sunstonesoft.github.io/design-style-picker/demos/2021-glassmorphism/)* | airy, premium, macOS | music, gaming, web3 | [guide](skills/design-style-picker/eras/2021-glassmorphism.md) |
 | 2022 | **Neubrutalism** ⭐ *deep guide + [live demo](https://sunstonesoft.github.io/design-style-picker/demos/2022-neubrutalism/)* | loud, playful, indie | restaurants, creators, events | [guide](skills/design-style-picker/eras/2022-neubrutalism.md) |
-| 2023 | **Linear Style** (dark SaaS) | precise, premium, engineered | SaaS, dev tools, fintech | [guide](skills/design-style-picker/eras/2023-linear-style.md) |
+| 2023 | **Linear Style** (dark SaaS) ⭐ *deep guide + [live demo](https://sunstonesoft.github.io/design-style-picker/demos/2023-linear-style/)* | precise, premium, engineered | SaaS, dev tools, fintech | [guide](skills/design-style-picker/eras/2023-linear-style.md) |
 | 2024 | **Bento Grid** *(layout add-on)* | tidy, scannable, Apple keynote | feature overviews, stores, link-in-bio | [guide](skills/design-style-picker/eras/2024-bento-grid.md) |
 | 2025 | **Liquid Glass** | fluid, physical, Apple | media, hardware, photo-led brands | [guide](skills/design-style-picker/eras/2025-liquid-glass.md) |
 
