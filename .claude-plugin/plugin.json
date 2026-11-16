@@ -1,0 +1,10 @@
+{
+  "name": "design-style-picker",
+  "version": "0.1.0",
+  "description": "Pick the right website design style for your industry and taste, then build it: 10 proven styles (2016–2025) with sourced rules, design tokens, components and checklists for AI agents.",
+  "author": { "name": "Sunstone Soft", "url": "https://github.com/sunstonesoft" },
+  "homepage": "https://sunstonesoft.github.io/design-style-picker/",
+  "repository": "https://github.com/sunstonesoft/design-style-picker",
+  "license": "MIT",
+  "keywords": ["design", "web-design", "design-style", "css", "design-tokens", "glassmorphism", "neubrutalism", "bento-grid", "dark-mode", "material-design", "liquid-glass"]
+}

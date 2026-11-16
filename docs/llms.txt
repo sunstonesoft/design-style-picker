@@ -1,0 +1,27 @@
+# design-style-picker
+
+> Pick the right website design style for an industry and the owner's taste, then build it. Ten proven web design styles from 2016–2025, each with its history, textbook rules, CSS design tokens, generic components, accessibility fixes and an agent checklist. MIT licensed. Works as a Claude Code skill/plugin and as plain Markdown for any coding agent.
+
+## Start here
+
+- [SKILL.md](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/SKILL.md): entry point and workflow
+- [picker.md](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/picker.md): how to choose a style (questions, scoring, industry fit matrix for 28 industries)
+- [timeline.md](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/timeline.md): when each style rose and fell
+- [Interactive picker](https://sunstonesoft.github.io/design-style-picker/)
+
+## Styles
+
+- [2016 Material Design](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2016-material-design.md)
+- [2017 Web Brutalism](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2017-brutalism.md)
+- [2018 Vibrant Gradients & Flat 2.0](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2018-gradients-flat-2.md)
+- [2019 Dark Mode](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2019-dark-mode.md)
+- [2020 Neumorphism](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2020-neumorphism.md)
+- [2021 Glassmorphism (deep guide)](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2021-glassmorphism.md)
+- [2022 Neubrutalism](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2022-neubrutalism.md)
+- [2023 Linear Style (dark SaaS)](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2023-linear-style.md)
+- [2024 Bento Grid](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2024-bento-grid.md)
+- [2025 Liquid Glass](https://github.com/sunstonesoft/design-style-picker/blob/main/skills/design-style-picker/eras/2025-liquid-glass.md)
+
+## Data
+
+- [picker.json](https://github.com/sunstonesoft/design-style-picker/blob/main/data/picker.json): style traits, industry fits with reasons, scoring weights

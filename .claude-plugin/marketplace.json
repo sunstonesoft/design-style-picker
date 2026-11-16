@@ -1,0 +1,11 @@
+{
+  "name": "design-style-picker",
+  "owner": { "name": "Sunstone Soft", "url": "https://github.com/sunstonesoft" },
+  "plugins": [
+    {
+      "name": "design-style-picker",
+      "source": "./",
+      "description": "Pick the right website design style for your industry and taste, then build it with sourced rules, tokens and components."
+    }
+  ]
+}

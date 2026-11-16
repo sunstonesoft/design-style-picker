@@ -1,0 +1,32 @@
+name: Industry fit / recommendation
+description: A recommendation was wrong for an industry, or an industry is missing
+title: "[fit] "
+labels: ["picker", "good first issue"]
+body:
+  - type: input
+    id: industry
+    attributes:
+      label: Industry or kind of website
+      placeholder: "e.g. veterinary clinic, indie game studio, B2B logistics SaaS"
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Preferences you chose
+      description: Feel, tone, daring, light/dark, era, density, audience. A screenshot of the website picker is fine.
+  - type: input
+    id: got
+    attributes:
+      label: What the picker recommended
+  - type: input
+    id: expected
+    attributes:
+      label: What you think fits better, and why
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (optional)
+      description: Real sites in that industry using the style (links), articles, user research.

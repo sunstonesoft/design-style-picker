@@ -1,0 +1,33 @@
+name: Propose a style
+description: Suggest a style that should be added (e.g. Swiss/editorial, claymorphism, Y2K) or a different dominant style for a year
+title: "[style] "
+labels: ["new style"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Style name (and aliases)
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When did it appear and peak?
+      placeholder: "e.g. appeared 2021, peak 2022–2023"
+  - type: textarea
+    id: sources
+    attributes:
+      label: Defining sources
+      description: The essay that named it, official guidelines, launch announcements, trend roundups from that year. At least 3 links.
+    validations:
+      required: true
+  - type: textarea
+    id: fit
+    attributes:
+      label: Which industries would it be the best fit for?
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd like to write the era file myself (see CONTRIBUTING.md)

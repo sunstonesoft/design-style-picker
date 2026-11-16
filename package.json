@@ -1,0 +1,22 @@
+{
+  "name": "design-style-picker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pick the right website design style for your industry and taste: 10 proven styles from the last decade with exact build instructions for AI coding agents.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://sunstonesoft.github.io/design-style-picker/",
+  "repository": { "type": "git", "url": "git+https://github.com/sunstonesoft/design-style-picker.git" },
+  "bugs": { "url": "https://github.com/sunstonesoft/design-style-picker/issues" },
+  "keywords": [
+    "design-style", "web-design", "website-design", "design-system", "ui-design", "ai-agents", "claude-code",
+    "agent-skills", "cursor", "codex", "glassmorphism", "neumorphism", "neubrutalism", "brutalism",
+    "bento-grid", "material-design", "dark-mode", "liquid-glass", "css", "design-tokens"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/scenarios.mjs",
+    "check": "node scripts/check.mjs && node scripts/build.mjs --check && node scripts/scenarios.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

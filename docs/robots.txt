@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sunstonesoft.github.io/design-style-picker/sitemap.xml

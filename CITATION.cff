@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "design-style-picker: choose and build the right web design style for your industry"
+type: software
+authors:
+  - name: "Sunstone Soft"
+repository-code: "https://github.com/sunstonesoft/design-style-picker"
+url: "https://sunstonesoft.github.io/design-style-picker/"
+license: MIT
+version: 0.1.0
+date-released: 2026-11-16
+keywords:
+  - web design
+  - design styles
+  - design history
+  - AI agents
+  - design tokens

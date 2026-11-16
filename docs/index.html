@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Style Picker: find the right website style for your industry</title>
+<meta name="description" content="Answer a few questions about your business and taste, and get the web design style that fits, from Material Design to glassmorphism, neubrutalism, bento grids and Liquid Glass, with build instructions for AI coding agents.">
+<link rel="canonical" href="https://sunstonesoft.github.io/design-style-picker/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Design Style Picker">
+<meta property="og:description" content="Which web design style fits your business? 10 proven styles, 28 industries, build instructions for AI agents. Free and open source.">
+<meta property="og:url" content="https://sunstonesoft.github.io/design-style-picker/">
+<meta property="og:image" content="https://sunstonesoft.github.io/design-style-picker/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sunstonesoft.github.io/design-style-picker/og.png">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='13' height='13' rx='3' fill='%23ff6b4a'/%3E%3Crect x='17' y='2' width='13' height='13' rx='7' fill='%237873f5'/%3E%3Crect x='2' y='17' width='13' height='13' rx='7' fill='%233dd9c5'/%3E%3Crect x='17' y='17' width='13' height='13' rx='3' fill='%23ffd23f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&family=Roboto:wght@400;500&family=Space+Mono:wght@400;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Design Style Picker","description":"Pick the right website design style for your industry and taste, then build it with AI coding agents.","codeRepository":"https://github.com/sunstonesoft/design-style-picker","license":"https://opensource.org/licenses/MIT","programmingLanguage":["CSS","Markdown","JavaScript"],"author":{"@type":"Organization","name":"Sunstone Soft"},"keywords":"web design styles, glassmorphism, neubrutalism, bento grid, material design, dark mode, liquid glass, AI agents, Claude Code"}
+</script>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f6f4ef; --surface: #ffffff; --surface-2: #efece4; --ink: #1c1b18; --muted: #5f5b52;
+  --line: #e2ddd2; --accent: #ff6b4a; --accent-ink: #1c1b18; --good: #1f7a4d; --bad: #b3261e;
+  --radius: 14px; --font: "Inter", system-ui, sans-serif; --display: "Fraunces", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #141413; --surface: #1d1c1a; --surface-2: #262522; --ink: #f2efe8; --muted: #a9a49a;
+    --line: #34322e; --good: #5fd39a; --bad: #ff8a80;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #141413; --surface: #1d1c1a; --surface-2: #262522; --ink: #f2efe8; --muted: #a9a49a;
+  --line: #34322e; --good: #5fd39a; --bad: #ff8a80;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.55 var(--font); }
+a { color: inherit; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 16px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header.top { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; }
+.brand svg { width: 26px; height: 26px; }
+.top nav { display: flex; gap: 20px; align-items: center; font-size: 15px; }
+.top nav a { text-decoration: none; color: var(--muted); } .top nav a:hover { color: var(--ink); }
+.gh { display: inline-flex; gap: 8px; align-items: center; border: 1px solid var(--line); background: var(--surface);
+      border-radius: 999px; padding: 6px 14px; color: var(--ink) !important; font-weight: 500; }
+@media (max-width: 640px) { .top nav a:not(.gh) { display: none; } }
+
+.hero { padding: 48px 0 32px; max-width: 760px; }
+.hero h1 { font: 600 clamp(36px, 6vw, 64px)/1.04 var(--display); letter-spacing: -.02em; margin: 0 0 16px; }
+.hero h1 em { font-style: normal; background: linear-gradient(transparent 62%, color-mix(in srgb, var(--accent) 45%, transparent) 0); }
+.hero p { font-size: 19px; color: var(--muted); margin: 0; max-width: 60ch; }
+
+.app { display: grid; grid-template-columns: 360px 1fr; gap: 24px; align-items: start; padding: 24px 0 64px; }
+@media (max-width: 900px) { .app { grid-template-columns: 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+form.panel { position: sticky; top: 16px; display: grid; gap: 18px; }
+@media (max-width: 900px) { form.panel { position: static; } }
+.q label, .q legend { display: block; font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+fieldset { border: 0; padding: 0; margin: 0; }
+select { width: 100%; min-height: 44px; padding: 0 12px; border-radius: 10px; border: 1px solid var(--line);
+         background: var(--surface-2); color: var(--ink); font: 500 15px var(--font); }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+.ends { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--muted); }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label { margin: 0; font-weight: 500; font-size: 13.5px; padding: 7px 12px; border-radius: 999px;
+             border: 1px solid var(--line); background: var(--surface-2); cursor: pointer; }
+.seg input:checked + label { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.seg input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.hint { margin: 0; font-size: 13px; color: var(--muted); }
+.addons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .addons { grid-template-columns: 1fr; } }
+.addon { display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: center; padding: 14px; }
+.addon .pv { height: 72px; }
+.addon .pv .card { padding: 6px; } .addon .pv .h { font-size: 10px; } .addon .pv .b { font-size: 8px; padding: 3px 6px; }
+.addon, .tile { text-decoration: none; color: inherit; }
+.addon:hover b { text-decoration: underline; }
+.addon b { display: block; } .addon p { margin: 2px 0 0; font-size: 14px; color: var(--muted); }
+.results { display: grid; gap: 16px; }
+.empty { color: var(--muted); }
+.result { display: grid; grid-template-columns: 220px 1fr; gap: 20px; }
+@media (max-width: 640px) { .result { grid-template-columns: 1fr; } }
+.rank { font: 600 13px var(--font); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.result h2 { font: 600 26px/1.15 var(--display); margin: 4px 0 6px; }
+.result .tag { color: var(--muted); margin: 0 0 12px; }
+.fit { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); margin-right: 6px; }
+.fit.strong { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+.notes { list-style: none; padding: 0; margin: 12px 0; display: grid; gap: 6px; font-size: 15px; }
+.notes li::before { display: inline-block; width: 1.3em; font-weight: 700; }
+.notes .plus::before { content: "+"; color: var(--good); }
+.notes .minus::before { content: "−"; color: var(--bad); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.btn { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 16px; border-radius: 999px;
+       font: 600 14px var(--font); text-decoration: none; cursor: pointer; border: 1px solid var(--line);
+       background: var(--surface-2); color: var(--ink); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn:hover { filter: brightness(1.05); }
+.runners { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .runners { grid-template-columns: 1fr; } }
+.runners .result { grid-template-columns: 1fr; }
+.runners h2 { font-size: 21px; }
+.avoid { font-size: 15px; }
+.avoid h3 { font-size: 15px; margin: 0 0 8px; }
+.avoid ul { margin: 0; padding-left: 18px; color: var(--muted); }
+.share { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+.toast { position: fixed; left: 50%; bottom: 24px; translate: -50% 0; background: var(--ink); color: var(--bg);
+         padding: 10px 18px; border-radius: 999px; font-weight: 600; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.on { opacity: 1; }
+
+section.gallery { padding: 32px 0 64px; border-top: 1px solid var(--line); }
+section.gallery h2, section.how h2 { font: 600 34px/1.1 var(--display); margin: 24px 0 8px; }
+section.gallery > p, section.how > p { color: var(--muted); margin: 0 0 28px; max-width: 64ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.tile { padding: 14px; display: grid; gap: 10px; text-decoration: none; }
+.tile:hover { border-color: var(--muted); }
+.tile b { font-size: 16px; } .tile small { color: var(--muted); }
+.how .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 64px; }
+@media (max-width: 800px) { .how .steps { grid-template-columns: 1fr; } }
+.how code, .how pre { font: 13.5px/1.5 "Space Mono", ui-monospace, monospace; }
+.how pre { background: var(--surface-2); border-radius: 10px; padding: 12px; overflow-x: auto; margin: 10px 0 0; white-space: pre-wrap; }
+footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+/* ── live mini previews, one per style ──────────────────── */
+.pv { border-radius: 12px; height: 150px; position: relative; overflow: hidden; display: grid; place-items: center; isolation: isolate; }
+.pv .card { width: 74%; padding: 14px; display: grid; gap: 8px; }
+.pv .h { font-size: 15px; font-weight: 700; line-height: 1.1; }
+.pv .b { justify-self: start; font-size: 11.5px; padding: 6px 12px; font-weight: 600; }
+
+.pv-material-design { background: #fafafa; }
+.pv-material-design .card { background: #fff; border-radius: 2px; color: rgb(0 0 0 / .87); font-family: Roboto, sans-serif;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0/.2), 0 2px 2px 0 rgb(0 0 0/.14), 0 1px 5px 0 rgb(0 0 0/.12); }
+.pv-material-design .h { font-weight: 500; }
+.pv-material-design .b { background: #3f51b5; color: #fff; border-radius: 2px; text-transform: uppercase; letter-spacing: .5px; font-weight: 500;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0/.2), 0 4px 5px 0 rgb(0 0 0/.14); }
+.pv-material-design::after { content: "+"; position: absolute; right: 12px; bottom: 12px; width: 34px; height: 34px; border-radius: 50%;
+  background: #ff4081; color: #fff; display: grid; place-items: center; font: 500 20px Roboto, sans-serif; box-shadow: 0 3px 5px -1px rgb(0 0 0/.3); }
+
+.pv-brutalism { background: #fff; color: #000; font-family: "Times New Roman", Times, serif; }
+.pv-brutalism .card { width: 86%; border-top: 2px solid #000; border-bottom: 2px solid #000; padding: 8px 0; }
+.pv-brutalism .h { font: 400 32px/0.9 "Times New Roman", serif; letter-spacing: -.03em; }
+.pv-brutalism .b { all: unset; color: #00f; text-decoration: underline; font: 12px "Courier New", monospace; }
+
+.pv-gradients-flat-2 { background: linear-gradient(135deg, #6a11cb, #2575fc); color: #fff; font-family: Poppins, sans-serif; }
+.pv-gradients-flat-2::before { content: ""; position: absolute; inset: 62% -10% -20%; background: #f6f8fd; transform: skewY(-8deg); z-index: -1; }
+.pv-gradients-flat-2 .b { background: linear-gradient(135deg, #ff6a88, #ff99ac); border-radius: 999px; box-shadow: 0 8px 18px -6px rgb(255 106 136 / .7); }
+
+.pv-dark-mode { background: #121212; color: rgb(255 255 255 / .87); }
+.pv-dark-mode .card { background: #1e1e1e; border: 1px solid rgb(255 255 255 / .12); border-radius: 12px; }
+.pv-dark-mode .b { background: #bb86fc; color: #121212; border-radius: 8px; }
+
+.pv-neumorphism { background: #e0e5ec; color: #31344b; font-family: Poppins, sans-serif; }
+.pv-neumorphism .card { background: #e0e5ec; border-radius: 18px; box-shadow: 8px 8px 14px rgb(163 177 198 / .7), -8px -8px 14px rgb(255 255 255 / .7); }
+.pv-neumorphism .b { background: #e0e5ec; border-radius: 12px; color: #6c63ff;
+  box-shadow: inset 4px 4px 8px rgb(163 177 198 / .7), inset -4px -4px 8px rgb(255 255 255 / .7); }
+
+.pv-glassmorphism { background: #1a1036; color: #fff; font-family: Poppins, sans-serif; }
+.pv-glassmorphism::before, .pv-glassmorphism::after { content: ""; position: absolute; border-radius: 50%; filter: blur(22px); z-index: -1; }
+.pv-glassmorphism::before { width: 120px; height: 120px; background: #c2337f; top: -20px; left: -10px; }
+.pv-glassmorphism::after { width: 110px; height: 110px; background: #5b54d6; bottom: -30px; right: 0; }
+.pv-glassmorphism .card { background: rgb(44 30 96 / .9); border: 1px solid rgb(255 255 255 / .3); border-radius: 16px; }
+@supports (backdrop-filter: blur(1px)) { .pv-glassmorphism .card { background: rgb(255 255 255 / .14); backdrop-filter: blur(14px) saturate(160%); } }
+.pv-glassmorphism .b { background: #fff; color: #1a1036; border-radius: 999px; }
+
+.pv-neubrutalism { background: #fffaf0; color: #0f0f0f; font-family: "Space Mono", monospace; }
+.pv-neubrutalism .card { background: #ff90e8; border: 3px solid #0f0f0f; box-shadow: 6px 6px 0 #0f0f0f; border-radius: 6px; }
+.pv-neubrutalism .h { font: 400 17px "Archivo Black", sans-serif; }
+.pv-neubrutalism .b { background: #ffd23f; border: 2px solid #0f0f0f; box-shadow: 3px 3px 0 #0f0f0f; border-radius: 4px; }
+
+.pv-linear-style { background: radial-gradient(70% 60% at 50% 0%, rgb(94 106 210 / .45), transparent 70%), #08090a; color: #f7f8f8; }
+.pv-linear-style .card { background: #111214; border: 1px solid rgb(255 255 255 / .1); border-radius: 12px; }
+.pv-linear-style .h { letter-spacing: -.03em; background: linear-gradient(180deg, #fff 30%, rgb(255 255 255 / .55)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pv-linear-style .b { background: #f7f8f8; color: #08090a; border-radius: 7px; }
+
+.pv-bento-grid { background: #fbfbfd; padding: 10px; display: grid; grid-template: 1fr 1fr / 2fr 1fr 1fr; gap: 6px; place-items: stretch; }
+.pv-bento-grid i { background: #ececf0; border-radius: 12px; }
+.pv-bento-grid i:first-child { grid-row: span 2; background: #111; }
+.pv-bento-grid i:nth-child(2) { grid-column: span 2; background: #ffd9cf; }
+.pv-bento-grid i:nth-child(3) { background: #dfe7ff; }
+
+.pv-liquid-glass { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f4a261'/%3E%3Cstop offset='.5' stop-color='%23e76f51'/%3E%3Cstop offset='1' stop-color='%23264653'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='120' fill='url(%23a)'/%3E%3Ccircle cx='150' cy='30' r='18' fill='%23ffe8a3'/%3E%3Cpath d='M0 90 Q50 60 100 85 T200 75 V120 H0Z' fill='%23173a40'/%3E%3C/svg%3E") center/cover; }
+.pv-liquid-glass .pill { position: absolute; bottom: 14px; left: 50%; translate: -50% 0; display: flex; gap: 4px; padding: 5px; border-radius: 999px;
+  background: rgb(30 30 32 / .75); box-shadow: inset 0 1px 0 rgb(255 255 255 / .55), 0 6px 18px rgb(0 0 0 / .25); }
+@supports (backdrop-filter: blur(1px)) { .pv-liquid-glass .pill { background: rgb(255 255 255 / .16); backdrop-filter: blur(3px) saturate(1.6); } }
+.pv-liquid-glass .pill span { color: #fff; font: 600 11.5px var(--font); padding: 6px 11px; border-radius: 999px; text-shadow: 0 1px 2px rgb(0 0 0 / .4); }
+.pv-liquid-glass .pill span:first-child { background: rgb(255 255 255 / .25); }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="13" height="13" rx="3" fill="#ff6b4a"/><rect x="17" y="2" width="13" height="13" rx="7" fill="#7873f5"/><rect x="2" y="17" width="13" height="13" rx="7" fill="#3dd9c5"/><rect x="17" y="17" width="13" height="13" rx="3" fill="#ffd23f"/></svg>
+      Design Style Picker</a>
+    <nav aria-label="Site">
+      <a href="#styles">Styles</a><a href="#agents">Use with AI agents</a>
+      <a class="gh" href="https://github.com/sunstonesoft/design-style-picker">★ Star on GitHub</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Find the website style that <em>fits your business</em>.</h1>
+    <p>Tell us what you're building and how it should feel. You'll get the best-fitting design style from the last ten years of web design, why it fits, and a ready-made prompt that tells your AI coding agent exactly how to build it.</p>
+  </section>
+
+  <div class="app">
+    <form class="panel" id="form" aria-label="Your project">
+      <div class="q"><label for="industry">What are you building?</label><select id="industry" name="industry"></select></div>
+      <fieldset class="q"><legend>What kind of site is it?</legend><div class="seg" data-name="page"></div></fieldset>
+      <div class="q" id="scales"></div>
+      <fieldset class="q"><legend>Light or dark?</legend><div class="seg" data-name="mode"></div></fieldset>
+      <fieldset class="q"><legend>Era preference</legend><div class="seg" data-name="trend"></div></fieldset>
+      <fieldset class="q"><legend>Visual effects your users and devices can handle</legend><div class="seg" data-name="effects"></div></fieldset>
+      <p class="hint">Picking an industry fills in typical answers. Adjust anything.</p>
+    </form>
+    <div class="results" id="results" aria-live="polite"><p class="empty">Pick an industry to see your match.</p></div>
+  </div>
+
+  <section class="gallery" id="styles">
+    <h2>The ten styles</h2>
+    <p>One defining style per year, 2016–2025. Each comes with its history, textbook rules, design tokens, components, accessibility fixes and a checklist, written for AI agents and readable by people.</p>
+    <div class="grid" id="gallery"></div>
+  </section>
+
+  <section class="how" id="agents">
+    <h2>Use it with your AI agent</h2>
+    <p>The whole project is plain Markdown, so any coding agent can read it. In Claude Code it installs as a plugin and kicks in on its own when you start a website.</p>
+    <div class="steps">
+      <div class="panel"><b>Claude Code</b>
+        <pre>/plugin marketplace add sunstonesoft/design-style-picker
+/plugin install design-style-picker@design-style-picker</pre></div>
+      <div class="panel"><b>Cursor, Codex, Copilot, Windsurf…</b>
+        <p>Clone the repo or add it as a reference, and point your agent at <code>AGENTS.md</code>. Or copy a single style file into your rules.</p></div>
+      <div class="panel"><b>Just ask</b>
+        <pre>"Pick a design style for my dental clinic's site, then build the homepage."</pre></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>MIT licensed · <a href="https://github.com/sunstonesoft/design-style-picker">GitHub</a> · <a href="https://github.com/sunstonesoft/design-style-picker/issues/new/choose">Suggest a style or industry</a></span>
+    <span>Made by <a href="https://github.com/sunstonesoft">Sunstone Soft</a></span>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script type="module">
+import data from "./picker-data.js";
+import { rankStyles } from "./picker-core.js";
+
+const REPO = "https://github.com/sunstonesoft/design-style-picker";
+const guideUrl = (s) => `${REPO}/blob/main/skills/design-style-picker/${s.file}`;
+const $ = (s) => document.querySelector(s);
+const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const q = Object.fromEntries(data.questions.map((x) => [x.id, x]));
+
+function preview(id) {
+  if (id === "bento-grid") return `<div class="pv pv-bento-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></div>`;
+  if (id === "liquid-glass") return `<div class="pv pv-liquid-glass" aria-hidden="true"><div class="pill"><span>Home</span><span>Browse</span><span>Search</span></div></div>`;
+  return `<div class="pv pv-${id}" aria-hidden="true"><div class="card"><div class="h">Hello, world</div><span class="b">Get started</span></div></div>`;
+}
+
+// ── build the form ──
+const sel = $("#industry");
+sel.innerHTML = `<option value="">Choose an industry…</option>` +
+  [...data.industries].sort((a, b) => a.name.localeCompare(b.name)).map((i) => `<option value="${i.id}">${esc(i.name)}</option>`).join("");
+$("#scales").outerHTML = ["energy", "tone", "edge"].map((id) => `
+  <div class="q"><label for="${id}">${esc(q[id].label)}</label>
+  <input type="range" id="${id}" name="${id}" min="1" max="5" step="1" value="${q[id].default}">
+  <div class="ends"><span>${esc(q[id].min)}</span><span>${esc(q[id].max)}</span></div></div>`).join("");
+const NICE = { light: "Light", dark: "Dark", either: "Either", current: "Current", any: "Any", retro: "Retro on purpose" };
+const SHORT = { page: ["Marketing", "Web app", "Content", "Store"], effects: ["Keep it simple", "Rich effects OK"] };
+for (const seg of document.querySelectorAll(".seg")) {
+  const def = q[seg.dataset.name];
+  seg.innerHTML = def.options.map((o, i) => {
+    const id = `${def.id}-${o}`, label = SHORT[def.id]?.[i] ?? NICE[o] ?? o;
+    return `<input type="radio" name="${def.id}" id="${id}" value="${o}" ${o === def.default ? "checked" : ""}><label for="${id}">${esc(label)}</label>`;
+  }).join("");
+}
+
+// ── state <-> URL hash (shareable results) ──
+const KEYS = ["industry", "page", "energy", "tone", "edge", "mode", "trend", "effects"];
+function readForm() {
+  const f = new FormData($("#form"));
+  return Object.fromEntries(KEYS.map((k) => [k, ["energy", "tone", "edge"].includes(k) ? +f.get(k) : f.get(k)]));
+}
+function writeForm(s) {
+  sel.value = s.industry || "";
+  for (const k of ["energy", "tone", "edge"]) if (s[k]) $("#" + k).value = s[k];
+  for (const k of ["page", "mode", "trend", "effects"]) {
+    const el = document.getElementById(`${k}-${s[k]}`); if (el) el.checked = true;
+  }
+}
+function fromHash() {
+  const p = new URLSearchParams(location.hash.slice(1));
+  if (!p.get("industry") || !data.industries.some((i) => i.id === p.get("industry"))) return null;
+  return Object.fromEntries(KEYS.filter((k) => p.get(k)).map((k) => [k, ["energy", "tone", "edge"].includes(k) ? +p.get(k) : p.get(k)]));
+}
+
+function agentPrompt(ind, top, addons, s) {
+  const feel = ["", "calm", "quiet", "balanced", "bold", "loud"][s.energy];
+  const tone = ["", "serious", "professional", "friendly", "playful", "fun"][s.tone];
+  const kind = { marketing: "marketing site", app: "web app", content: "content site", store: "online store" }[s.page];
+  const extra = addons.map((a) => a.style.kind === "layout" ? `use a ${a.style.name} layout (skills/design-style-picker/${a.style.file}) for feature or overview sections`
+    : `offer a dark theme following skills/design-style-picker/${a.style.file}`);
+  return `Use the design-style-picker skill (${REPO}) to build the ${kind} for my ${ind.name.toLowerCase()} business in the ${top.style.name} style (${top.style.year}). ` +
+    `It should feel ${feel} and ${tone}${s.mode !== "either" ? `, with a ${s.mode} theme` : ""}${s.effects === "simple" ? ", and stay light on visual effects for older devices" : ""}. ` +
+    `Read skills/design-style-picker/${top.style.file} fully, follow its textbook rules and tokens, and apply every accessibility fix in it. ` +
+    (extra.length ? `Also ${extra.join(", and ")}. ` : "") +
+    `Finish by working through the era file's agent checklist.`;
+}
+
+function render() {
+  const s = readForm();
+  const out = $("#results");
+  if (!s.industry) { out.innerHTML = `<p class="empty">Pick an industry to see your match.</p>`; history.replaceState(null, "", location.pathname); return; }
+  const { industry: ind, styles, addons } = rankStyles(data, s.industry, s);
+  const [top, ...rest] = styles;
+  const card = (r, n) => `
+    <article class="panel result">
+      ${preview(r.id)}
+      <div>
+        <div class="rank">${n === 0 ? "Your match" : r.tie ? "Equally good" : n === 1 ? "Runner-up" : "Also consider"}</div>
+        <h2>${esc(r.style.name)} <small style="font:500 15px var(--font);color:var(--muted)">${r.style.year}</small></h2>
+        <p class="tag">${esc(r.style.tagline)}</p>
+        ${r.fit === "strong" ? `<span class="fit strong">Strong fit for ${esc(ind.name)}</span>` : r.fit === "works" ? `<span class="fit">Works for ${esc(ind.name)}</span>` : ""}
+        <ul class="notes">${r.notes.slice(0, n === 0 ? 5 : 3).map((x) => `<li class="${x.kind}">${esc(x.text)}</li>`).join("")}</ul>
+        <div class="actions">
+          <a class="btn ${n === 0 ? "primary" : ""}" href="${guideUrl(r.style)}">Build guide →</a>
+          ${n === 0 ? `<button class="btn" type="button" id="copy-prompt">Copy prompt for your AI agent</button>` : ""}
+          ${r.id === "glassmorphism" ? `<a class="btn" href="demos/2021-glassmorphism/">Live demo</a>` : ""}
+        </div>
+      </div>
+    </article>`;
+  const avoid = Object.entries(ind.avoid || {});
+  const addonCard = (a) => `<a class="panel addon" href="${guideUrl(a.style)}">${preview(a.id)}<div>
+      <b>+ ${esc(a.style.name)}</b><p>${a.style.kind === "layout" ? "Use it as the layout for features, products or stats." : "Offer it as the dark variant of your style."}
+      ${a.fit === "strong" ? esc(ind.strong[a.id]) + "." : ""}</p></div></a>`;
+  out.innerHTML = card(top, 0) +
+    (addons.length ? `<div class="addons">${addons.map(addonCard).join("")}</div>` : "") +
+    `<div class="runners">${rest.slice(0, 2).map((r, i) => card(r, i + 1)).join("")}</div>` +
+    (avoid.length ? `<div class="panel avoid"><h3>Avoid for ${esc(ind.name.toLowerCase())}</h3><ul>${avoid.map(([id, why]) =>
+      `<li><b>${esc(data.styles.find((x) => x.id === id).name)}</b>: ${esc(why)}</li>`).join("")}</ul></div>` : "") +
+    `<div class="share">Share this result: <button class="btn" type="button" id="copy-link">Copy link</button></div>`;
+  const p = new URLSearchParams(Object.entries(s).map(([k, v]) => [k, String(v)]));
+  history.replaceState(null, "", "#" + p);
+  $("#copy-prompt").onclick = () => copy(agentPrompt(ind, top, addons, s), "Prompt copied: paste it into your agent");
+  $("#copy-link").onclick = () => copy(location.href, "Link copied");
+}
+
+async function copy(text, msg) {
+  try { await navigator.clipboard.writeText(text); toast(msg); }
+  catch { prompt("Copy this:", text); }
+}
+let tid; function toast(m) { const t = $("#toast"); t.textContent = m; t.classList.add("on"); clearTimeout(tid); tid = setTimeout(() => t.classList.remove("on"), 2200); }
+
+sel.addEventListener("change", () => {
+  const ind = data.industries.find((i) => i.id === sel.value);
+  if (ind) writeForm({ ...readForm(), ...ind.defaults, industry: ind.id });
+  render();
+});
+$("#form").addEventListener("input", (e) => { if (e.target !== sel) render(); });
+
+// ── gallery ──
+$("#gallery").innerHTML = data.styles.map((s) => `
+  <a class="panel tile" href="${guideUrl(s)}">${preview(s.id)}<b>${esc(s.name)}</b><small>${s.year} · ${esc(s.tagline)}</small></a>`).join("");
+
+const initial = fromHash();
+if (initial) { writeForm(initial); }
+render();
+</script>
+</body>
+</html>

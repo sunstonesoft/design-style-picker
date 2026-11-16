@@ -1,0 +1,24 @@
+name: Fix a fact or rule
+description: Wrong date, wrong value, dead link, or a better primary source
+title: "[fix] "
+labels: ["accuracy", "good first issue"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File and section
+      placeholder: "eras/2020-neumorphism.md, Origin & timeline"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source for the correction
+    validations:
+      required: true
