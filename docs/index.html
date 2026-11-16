@@ -115,6 +115,8 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 .avoid h3 { font-size: 15px; margin: 0 0 8px; }
 .avoid ul { margin: 0; padding-left: 18px; color: var(--muted); }
 .share { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+.share .fb { display: inline-flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-left: auto; }
+@media (max-width: 640px) { .share .fb { margin-left: 0; } }
 .toast { position: fixed; left: 50%; bottom: 24px; translate: -50% 0; background: var(--ink); color: var(--bg);
          padding: 10px 18px; border-radius: 999px; font-weight: 600; opacity: 0; transition: opacity .2s; pointer-events: none; }
 .toast.on { opacity: 1; }
@@ -353,9 +355,21 @@ function render() {
     `<div class="runners">${rest.slice(0, 2).map((r, i) => card(r, i + 1)).join("")}</div>` +
     (avoid.length ? `<div class="panel avoid"><h3>Avoid for ${esc(ind.name.toLowerCase())}</h3><ul>${avoid.map(([id, why]) =>
       `<li><b>${esc(data.styles.find((x) => x.id === id).name)}</b>: ${esc(why)}</li>`).join("")}</ul></div>` : "") +
-    `<div class="share">Share this result: <button class="btn" type="button" id="copy-link">Copy link</button></div>`;
+    `<div class="share">Share this result: <button class="btn" type="button" id="copy-link">Copy link</button>
+      <span class="fb" id="fb">Was this the right pick? <button class="btn" type="button" id="fb-yes">Yes</button>
+      <a class="btn" id="fb-no" target="_blank" rel="noopener">Not really →</a></span></div>`;
   const p = new URLSearchParams(Object.entries(s).map(([k, v]) => [k, String(v)]));
   history.replaceState(null, "", "#" + p);
+  // "Not really" opens the industry-fit issue form, pre-filled. No backend, no tracking.
+  const issue = new URLSearchParams({
+    template: "industry-fit.yml",
+    title: `[fit] ${ind.name}: picked ${top.style.name}`,
+    industry: ind.name,
+    inputs: `page ${s.page} · feel ${s.energy} · tone ${s.tone} · edge ${s.edge} · ${s.mode} · ${s.trend} · effects ${s.effects}\n${location.href}`,
+    got: `${top.style.name}${addons.length ? " + " + addons.map((a) => a.style.name).join(" + ") : ""} (runner-up: ${rest[0]?.style.name ?? "none"})`,
+  });
+  $("#fb-no").href = `${REPO}/issues/new?${issue}`;
+  $("#fb-yes").onclick = () => { $("#fb").textContent = "Thanks! A star on GitHub helps others find the picker."; };
   $("#copy-prompt").onclick = () => copy(agentPrompt(ind, top, addons, s), "Prompt copied: paste it into your agent");
   $("#copy-link").onclick = () => copy(location.href, "Link copied");
 }
