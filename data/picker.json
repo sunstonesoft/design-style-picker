@@ -44,7 +44,7 @@
       "tagline": "Near-black, one glow, hairlines, product-first",
       "traits": { "energy": 2, "tone": 1, "edge": 2, "freshness": 4, "density": 2, "a11yRisk": 2, "mode": "dark",
                   "pages": { "marketing": 2, "app": 2, "content": 1, "store": 0 } } },
-    { "id": "bento-grid", "kind": "layout", "year": 2024, "name": "Bento Grid", "file": "eras/2024-bento-grid.md",
+    { "id": "bento-grid", "kind": "layout", "demo": true, "year": 2024, "name": "Bento Grid", "file": "eras/2024-bento-grid.md",
       "tagline": "Rounded tiles, one idea each, Apple-keynote tidy",
       "traits": { "energy": 3, "tone": 3, "edge": 2, "freshness": 5, "density": 2, "a11yRisk": 1, "mode": "both",
                   "pages": { "marketing": 2, "app": 1, "content": 0, "store": 2 } } },

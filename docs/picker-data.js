@@ -203,6 +203,7 @@ export default {
     {
       "id": "bento-grid",
       "kind": "layout",
+      "demo": true,
       "year": 2024,
       "name": "Bento Grid",
       "file": "eras/2024-bento-grid.md",

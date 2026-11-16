@@ -24,7 +24,7 @@ Each is filed under the year it defined. [timeline.md](timeline.md) has the hist
 | 2021 | **Glassmorphism** (deep guide + demo) | Frosted panels over vivid orbs | [eras/2021-glassmorphism.md](eras/2021-glassmorphism.md) |
 | 2022 | **Neubrutalism** (deep guide + demo) | Thick outlines, hard offset shadows, loud fills | [eras/2022-neubrutalism.md](eras/2022-neubrutalism.md) |
 | 2023 | **Linear Style (dark SaaS)** (deep guide + demo) | Near-black, one glow, hairlines, Inter | [eras/2023-linear-style.md](eras/2023-linear-style.md) |
-| 2024 | Bento Grid | Rounded tiles of varied size, one idea each | [eras/2024-bento-grid.md](eras/2024-bento-grid.md) |
+| 2024 | **Bento Grid** (deep guide + demo) | Rounded tiles of varied size, one idea each | [eras/2024-bento-grid.md](eras/2024-bento-grid.md) |
 | 2025 | Liquid Glass | Refracting glass controls over full-bleed content | [eras/2025-liquid-glass.md](eras/2025-liquid-glass.md) |
 
 ## Workflow
