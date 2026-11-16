@@ -378,7 +378,10 @@ $("#gallery").innerHTML = data.styles.map((s) => `
   <a class="panel tile" href="${guideUrl(s)}">${preview(s.id)}<b>${esc(s.name)}</b><small>${s.year} · ${esc(s.tagline)}</small></a>`).join("");
 
 const initial = fromHash();
-if (initial) { writeForm(initial); }
+if (initial) {
+  const ind = data.industries.find((i) => i.id === initial.industry);
+  writeForm({ ...readForm(), ...ind.defaults, ...initial });   // link params win, industry defaults fill the gaps
+}
 render();
 </script>
 </body>
