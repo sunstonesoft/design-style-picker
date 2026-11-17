@@ -1,6 +1,6 @@
 {
   "name": "design-style-picker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Pick the right website design style for your industry and taste: 10 proven styles from the last decade with exact build instructions for AI coding agents.",
   "type": "module",

@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased (0.2.0, "Depth")
+## 0.2.0 "Depth" (2026-11-16)
 
 - **Four new deep guides**: Neubrutalism, Linear Style, Bento Grid and Liquid Glass, each with sourced recipe tables, layout recipes, performance notes, anti-patterns and computed contrast tables.
 - **Shared demo brief**: Kettlefern Coffee Roasters, a fictional roaster every demo builds with the same sections and copy. All ten styles now have a demo (five deep, five basic).
